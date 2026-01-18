@@ -1,0 +1,4997 @@
+{
+  "scenes": [
+    {
+      "id": 1,
+      "offset": 4452,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 2,
+          "offset": 4460
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\face.bmp",
+          "param": 16,
+          "offset": 4485
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\bibliobis.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "4"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "57 60 125 365 0 La bibliothèque"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            },
+            {
+              "id": 2,
+              "subtype": 22,
+              "param": "euroland 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "espagne = 1 then dec_var espagne 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "angleterre = 1 then dec_var angleterre 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "autriche = 1  then dec_var autriche 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "allemagne = 1  then dec_var allemagne 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "ecosse = 1  then dec_var ecosse 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "belgique = 1  then dec_var belgique 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "france = 1  then dec_var france 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "finlande = 1  then dec_var finlande 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "irlande = 1  then dec_var irlande 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "italie = 1  then dec_var italie 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "paysbas = 1  then dec_var paysbas 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "grece = 1  then dec_var grece 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "danemark = 1  then dec_var danemark 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "portugal = 1  then dec_var portugal 1"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "suede = 1  then dec_var suede 1"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 140,
+                "y": 267
+              },
+              {
+                "x": 181,
+                "y": 260
+              },
+              {
+                "x": 189,
+                "y": 166
+              },
+              {
+                "x": 166,
+                "y": 121
+              },
+              {
+                "x": 56,
+                "y": 120
+              },
+              {
+                "x": 35,
+                "y": 161
+              },
+              {
+                "x": 43,
+                "y": 189
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "387 351 125 365 0 La banque"
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\bankbis.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "3"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 13,
+            "points": [
+              {
+                "x": 433,
+                "y": 339
+              },
+              {
+                "x": 389,
+                "y": 303
+              },
+              {
+                "x": 416,
+                "y": 262
+              },
+              {
+                "x": 426,
+                "y": 242
+              },
+              {
+                "x": 460,
+                "y": 217
+              },
+              {
+                "x": 465,
+                "y": 169
+              },
+              {
+                "x": 483,
+                "y": 164
+              },
+              {
+                "x": 501,
+                "y": 191
+              },
+              {
+                "x": 530,
+                "y": 166
+              },
+              {
+                "x": 615,
+                "y": 168
+              },
+              {
+                "x": 637,
+                "y": 150
+              },
+              {
+                "x": 639,
+                "y": 374
+              },
+              {
+                "x": 552,
+                "y": 374
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "89 375 125 365 0 Ma maison"
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\home2.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "5"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 9,
+                "y": 385
+              },
+              {
+                "x": 50,
+                "y": 395
+              },
+              {
+                "x": 149,
+                "y": 355
+              },
+              {
+                "x": 145,
+                "y": 277
+              },
+              {
+                "x": 38,
+                "y": 192
+              },
+              {
+                "x": 1,
+                "y": 248
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "387 18 125 365 0 La maison de prof"
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\profbis.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "6"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 12,
+            "points": [
+              {
+                "x": 466,
+                "y": 149
+              },
+              {
+                "x": 444,
+                "y": 101
+              },
+              {
+                "x": 462,
+                "y": 68
+              },
+              {
+                "x": 464,
+                "y": 24
+              },
+              {
+                "x": 465,
+                "y": 1
+              },
+              {
+                "x": 495,
+                "y": 7
+              },
+              {
+                "x": 504,
+                "y": 40
+              },
+              {
+                "x": 543,
+                "y": 60
+              },
+              {
+                "x": 572,
+                "y": 92
+              },
+              {
+                "x": 578,
+                "y": 126
+              },
+              {
+                "x": 568,
+                "y": 166
+              },
+              {
+                "x": 496,
+                "y": 156
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "249 297 125 365 0 Le musée du village"
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\musee.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "7"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 11,
+            "points": [
+              {
+                "x": 287,
+                "y": 267
+              },
+              {
+                "x": 270,
+                "y": 238
+              },
+              {
+                "x": 273,
+                "y": 198
+              },
+              {
+                "x": 270,
+                "y": 181
+              },
+              {
+                "x": 315,
+                "y": 149
+              },
+              {
+                "x": 347,
+                "y": 136
+              },
+              {
+                "x": 388,
+                "y": 162
+              },
+              {
+                "x": 417,
+                "y": 190
+              },
+              {
+                "x": 405,
+                "y": 203
+              },
+              {
+                "x": 411,
+                "y": 245
+              },
+              {
+                "x": 383,
+                "y": 280
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "348 357 125 365 0 La fontaine à couleurs"
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\fontaine.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "39"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 8,
+            "points": [
+              {
+                "x": 277,
+                "y": 316
+              },
+              {
+                "x": 232,
+                "y": 316
+              },
+              {
+                "x": 213,
+                "y": 304
+              },
+              {
+                "x": 228,
+                "y": 289
+              },
+              {
+                "x": 229,
+                "y": 0
+              },
+              {
+                "x": 264,
+                "y": 0
+              },
+              {
+                "x": 264,
+                "y": 289
+              },
+              {
+                "x": 280,
+                "y": 303
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "offset": 6734,
+      "files": [
+        {
+          "slot": 6,
+          "filename": "euroland\\bureaubanquier.bmp",
+          "param": 16,
+          "offset": 6774
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 4,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "3"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 360 125 365 0 SORTIE"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 355
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "20"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 0 L'agenda du banquier"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 360,
+                "y": 210
+              },
+              {
+                "x": 448,
+                "y": 242
+              },
+              {
+                "x": 413,
+                "y": 344
+              },
+              {
+                "x": 318,
+                "y": 306
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 0 Une tasse de café noir"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 461,
+                "y": 21
+              },
+              {
+                "x": 602,
+                "y": 158
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 0 Une bouteille d'encre noire"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "22"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 80,
+                "y": 20
+              },
+              {
+                "x": 173,
+                "y": 130
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "23"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 00 Du courrier"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 234,
+                "y": 156
+              },
+              {
+                "x": 227,
+                "y": 65
+              },
+              {
+                "x": 390,
+                "y": 50
+              },
+              {
+                "x": 434,
+                "y": 133
+              },
+              {
+                "x": 297,
+                "y": 195
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "21"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 0 Dossier euro"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 131,
+                "y": 165
+              },
+              {
+                "x": 240,
+                "y": 308
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "offset": 7742,
+      "files": [
+        {
+          "slot": 4,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 7766
+        },
+        {
+          "slot": 6,
+          "filename": "euroland\\banque.bmp",
+          "param": 16,
+          "offset": 7791
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 4,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "22 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "90 350 600 365 0 SORTIE"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 370
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\banq2.avi 1 168 122 344 374"
+            },
+            {
+              "id": 1,
+              "subtype": 16,
+              "param": "500"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq41.avi 1 168 122 344 374"
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "160 350 125 365 0 Le banquier d'Euroland"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 184,
+                "y": 340
+              },
+              {
+                "x": 194,
+                "y": 215
+              },
+              {
+                "x": 206,
+                "y": 181
+              },
+              {
+                "x": 177,
+                "y": 158
+              },
+              {
+                "x": 213,
+                "y": 123
+              },
+              {
+                "x": 312,
+                "y": 132
+              },
+              {
+                "x": 332,
+                "y": 171
+              },
+              {
+                "x": 308,
+                "y": 194
+              },
+              {
+                "x": 321,
+                "y": 291
+              },
+              {
+                "x": 317,
+                "y": 340
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq3.avi 1 168 122 344 374"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then rundll roue.dll"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "milleeuro >= 1 then addbmp coffre euroland\\rollover\\coffre.bmp 0 0 203 else delbmp coffre"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "5 365 125 400 0 Un coffre fort"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 205
+              },
+              {
+                "x": 90,
+                "y": 360
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playwav bruit\\boing.wav 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 0 then set_var bonus3 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 1 then scene 35"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playtext 310 75 125 365 0 Question Bonus"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 2 then playtext 310 75 125 365 0 tu as déjà répondu"
+            }
+          ],
+          "geometry": {
+            "cursorId": 107,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 451,
+                "y": 17
+              },
+              {
+                "x": 552,
+                "y": 10
+              },
+              {
+                "x": 556,
+                "y": 133
+              },
+              {
+                "x": 450,
+                "y": 138
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "2"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 330 639 365 0 Le bureau du banquier"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 330,
+                "y": 220
+              },
+              {
+                "x": 610,
+                "y": 270
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "offset": 9282,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 9290
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\biblio.bmp",
+          "param": 16,
+          "offset": 9315
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 3,
+              "param": ""
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 1 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "220 350 125 365 0 SORTIE"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 149,
+                "y": 286
+              },
+              {
+                "x": 143,
+                "y": 125
+              },
+              {
+                "x": 271,
+                "y": 63
+              },
+              {
+                "x": 342,
+                "y": 96
+              },
+              {
+                "x": 346,
+                "y": 284
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 2,
+              "subtype": 22,
+              "param": "jeu 0"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 4"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 210 125 365 0 Le livre des"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 225 125 365 0  recettes d'Europe"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 380,
+                "y": 132
+              },
+              {
+                "x": 467,
+                "y": 191
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "850 360 125 365 0 La bibliothécaire d'Euroland"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "telephone = 1 then addbmp tt euroland\\rollover\\maintel.bmp 0 732 240"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then closewav"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then playavi euroland\\biblio1.avi 1 754 217 873 325"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then scene 16"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 752,
+                "y": 190
+              },
+              {
+                "x": 876,
+                "y": 387
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1030 290 125 365 0 Une lampe de bureau"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 989,
+                "y": 262
+              },
+              {
+                "x": 1018,
+                "y": 213
+              },
+              {
+                "x": 1057,
+                "y": 212
+              },
+              {
+                "x": 1112,
+                "y": 290
+              },
+              {
+                "x": 1061,
+                "y": 294
+              },
+              {
+                "x": 1060,
+                "y": 265
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 2"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1385 212 125 365 0 Le petit atlas"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1385 232 125 365 0 d'Europe."
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1365,
+                "y": 126
+              },
+              {
+                "x": 1559,
+                "y": 188
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 10"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1120 142 125 365 0 Les Hymnes"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1120 162 125 365 0  nationaux"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1079,
+                "y": 99
+              },
+              {
+                "x": 1198,
+                "y": 67
+              },
+              {
+                "x": 1200,
+                "y": 122
+              },
+              {
+                "x": 1083,
+                "y": 140
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 6,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\italie\\italie.vnp  27"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "355 22 125 365 0 Léonard"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "355 42 125 365 0 de Vinci"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 381,
+                "y": 68
+              },
+              {
+                "x": 481,
+                "y": 126
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 7,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp  11"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "375 362 125 365 0 L'euro et nous"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 377,
+                "y": 269
+              },
+              {
+                "x": 474,
+                "y": 329
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 8,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "700 12 125 365 0 Big"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "700 32 125 365 0 Ben"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 59"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 710,
+                "y": 62
+              },
+              {
+                "x": 782,
+                "y": 136
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 9,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 10"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1740 2 125 365 0 Le mur de"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1740 22 125 365 0  Berlin"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 1768,
+                "y": 178
+              },
+              {
+                "x": 1769,
+                "y": 81
+              },
+              {
+                "x": 1807,
+                "y": 46
+              },
+              {
+                "x": 1874,
+                "y": 42
+              },
+              {
+                "x": 1878,
+                "y": 148
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 10,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1350 332 125 365 0 les corsaires"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 27"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1359,
+                "y": 276
+              },
+              {
+                "x": 1454,
+                "y": 338
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 11,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\grece\\grece.vnp 13"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1440 22 125 365 0 Les jeux"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1440 42 125 365 0  Olympiques"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1408,
+                "y": 112
+              },
+              {
+                "x": 1444,
+                "y": 51
+              },
+              {
+                "x": 1537,
+                "y": 54
+              },
+              {
+                "x": 1508,
+                "y": 114
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 12,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\ecosse\\ecosse.vnp 36"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1100 100 125 365 0 La cornemuse"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1104,
+                "y": 148
+              },
+              {
+                "x": 1200,
+                "y": 131
+              },
+              {
+                "x": 1201,
+                "y": 193
+              },
+              {
+                "x": 1102,
+                "y": 196
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 13,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 1"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 330 125 365 0 Les joyaux de"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 345 125 365 0 la couronne"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 360 125 365 0 d'Angleterre"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 379,
+                "y": 200
+              },
+              {
+                "x": 462,
+                "y": 260
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 14,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 17"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "900 182 125 365 0 La tour Eiffel"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 892,
+                "y": 154
+              },
+              {
+                "x": 991,
+                "y": 201
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 15,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 11"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1600 62 125 365 0 L'exposition"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1600 82 125 365 0 universelle"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1580,
+                "y": 125
+              },
+              {
+                "x": 1743,
+                "y": 99
+              },
+              {
+                "x": 1742,
+                "y": 176
+              },
+              {
+                "x": 1581,
+                "y": 188
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 16,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 6"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 322 125 365 0 Un livre sur"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 342 125 365 0 la fabrication"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 362 125 365 0 de la bière"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 31,
+                "y": 260
+              },
+              {
+                "x": 21,
+                "y": 246
+              },
+              {
+                "x": 29,
+                "y": 227
+              },
+              {
+                "x": 77,
+                "y": 228
+              },
+              {
+                "x": 75,
+                "y": 257
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 17,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\belge\\belge.vnp 23"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 162 125 365 0 L'histoire"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 182 125 365 0 du chocolat"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 895,
+                "y": 94
+              },
+              {
+                "x": 956,
+                "y": 146
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 18,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 14"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "515 44 125 365 0 Le fado"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 485,
+                "y": 71
+              },
+              {
+                "x": 566,
+                "y": 130
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 19,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 26"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1300 280 125 365 0 Les grands couturiers"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1369,
+                "y": 199
+              },
+              {
+                "x": 1441,
+                "y": 262
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 20,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\holl\\holl.vnp 11"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1110 260  125 365 0 Les tulipes"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1128,
+                "y": 203
+              },
+              {
+                "x": 1203,
+                "y": 199
+              },
+              {
+                "x": 1204,
+                "y": 261
+              },
+              {
+                "x": 1135,
+                "y": 258
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 21,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 15"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1450 262 125 365 0 Les grands"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1450 282 125 365 0 navigateurs"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1458,
+                "y": 203
+              },
+              {
+                "x": 1559,
+                "y": 263
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 22,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 150 125 365 0 Louis"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 165 125 365 0 Pasteur"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 15"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 481,
+                "y": 137
+              },
+              {
+                "x": 569,
+                "y": 195
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 23,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\italie\\italie.vnp  29"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 222 125 365 0 Balade à"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 242 125 365 0 Venise"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 476,
+                "y": 202
+              },
+              {
+                "x": 569,
+                "y": 261
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 24,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 362 125 365 0 Ludwig Van Beethoven"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 5"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 482,
+                "y": 270
+              },
+              {
+                "x": 576,
+                "y": 326
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 25,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 162 125 365 0 Stonehenge"
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 57"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 961,
+                "y": 92
+              },
+              {
+                "x": 1053,
+                "y": 148
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "offset": 15131,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 15139
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\maison.bmp",
+          "param": 16,
+          "offset": 15164
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "8"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1400 350 125 365 0 Une armoire bien remplie"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1438,
+                "y": 132
+              },
+              {
+                "x": 1611,
+                "y": 315
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "95 350 125 365 0 SORTIE"
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 65,
+                "y": 300
+              },
+              {
+                "x": 72,
+                "y": 168
+              },
+              {
+                "x": 87,
+                "y": 136
+              },
+              {
+                "x": 181,
+                "y": 142
+              },
+              {
+                "x": 230,
+                "y": 188
+              },
+              {
+                "x": 227,
+                "y": 272
+              },
+              {
+                "x": 221,
+                "y": 300
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1"
+            }
+          ],
+          "geometry": {
+            "cursorId": 101,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1032,
+                "y": 343
+              },
+              {
+                "x": 1258,
+                "y": 394
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 360 125 365 0 Madame euro"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\femme.avi 1 220 150 420 400"
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 13,
+            "points": [
+              {
+                "x": 246,
+                "y": 378
+              },
+              {
+                "x": 264,
+                "y": 339
+              },
+              {
+                "x": 257,
+                "y": 279
+              },
+              {
+                "x": 275,
+                "y": 205
+              },
+              {
+                "x": 300,
+                "y": 173
+              },
+              {
+                "x": 344,
+                "y": 178
+              },
+              {
+                "x": 369,
+                "y": 197
+              },
+              {
+                "x": 370,
+                "y": 255
+              },
+              {
+                "x": 378,
+                "y": 330
+              },
+              {
+                "x": 354,
+                "y": 331
+              },
+              {
+                "x": 381,
+                "y": 376
+              },
+              {
+                "x": 356,
+                "y": 393
+              },
+              {
+                "x": 292,
+                "y": 389
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "370 340 125 365 0 Une table avec plein de choses dessus"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "51"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 14,
+            "points": [
+              {
+                "x": 579,
+                "y": 271
+              },
+              {
+                "x": 496,
+                "y": 271
+              },
+              {
+                "x": 413,
+                "y": 262
+              },
+              {
+                "x": 397,
+                "y": 241
+              },
+              {
+                "x": 436,
+                "y": 227
+              },
+              {
+                "x": 462,
+                "y": 211
+              },
+              {
+                "x": 475,
+                "y": 211
+              },
+              {
+                "x": 478,
+                "y": 174
+              },
+              {
+                "x": 502,
+                "y": 169
+              },
+              {
+                "x": 509,
+                "y": 203
+              },
+              {
+                "x": 524,
+                "y": 203
+              },
+              {
+                "x": 537,
+                "y": 223
+              },
+              {
+                "x": 574,
+                "y": 233
+              },
+              {
+                "x": 610,
+                "y": 262
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "sacados = 1 then if clejaune = 0 then set_var clejaune 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clejaune = 0 then addbmp clejaune euroland\\rollover\\clejaune.bmp 0 1794 178"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clejaune != 0 then delbmp clejaune"
+            },
+            {
+              "id": 1,
+              "subtype": 39,
+              "param": "18 0 #0000ff Comic sans MS"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clejaune = 0 then playtext 1540 190 1700 210 0  Il te faut un sac à dos"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clejaune = 0 then playtext 1540 210 1700 230 0  pour ranger tes objets"
+            },
+            {
+              "id": 1,
+              "subtype": 32,
+              "param": ""
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune = 0 then addbmp clejaune euroland\\rollover\\clejaune.bmp 0 1794 178"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune != 0 then delbmp clejaune"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune = 0 then playtext 1440 350 125 365 0 Il y a quelque chose"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune = 0 then playtext 1440 370 125 365 0  dans le chaudron"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune != 0 then playtext 1440 350 125 365 0  Il n'y a plus rien"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "clejaune != 0 then playtext 1440 370 125 365 0  dans le chaudron"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 1810,
+                "y": 221
+              },
+              {
+                "x": 1803,
+                "y": 196
+              },
+              {
+                "x": 1828,
+                "y": 164
+              },
+              {
+                "x": 1850,
+                "y": 173
+              },
+              {
+                "x": 1850,
+                "y": 191
+              },
+              {
+                "x": 1862,
+                "y": 203
+              },
+              {
+                "x": 1863,
+                "y": 222
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 6,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 28,
+              "param": "clejaune"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1700,
+                "y": 300
+              },
+              {
+                "x": 1700,
+                "y": 100
+              },
+              {
+                "x": 1900,
+                "y": 100
+              },
+              {
+                "x": 1900,
+                "y": 300
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 7,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus1 = 0 then playwav bruit\\boing.wav 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus1 = 0 then set_var bonus1 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus1 = 1 then scene 35"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus1 = 0 then playtext 680 350 125 365 0 Question Bonus"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus1 = 2 then playtext 680 350 125 365 0 tu as déjà répondu"
+            }
+          ],
+          "geometry": {
+            "cursorId": 107,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 711,
+                "y": 9
+              },
+              {
+                "x": 808,
+                "y": 123
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 8,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 1,
+              "subtype": 38,
+              "param": "800 350 125 365 0 Tu n'as pas le temps"
+            },
+            {
+              "id": 1,
+              "subtype": 38,
+              "param": "800 370 125 365 0 de te reposer."
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "990 350 125 365 0 Un lit"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 9,
+            "points": [
+              {
+                "x": 770,
+                "y": 345
+              },
+              {
+                "x": 752,
+                "y": 123
+              },
+              {
+                "x": 892,
+                "y": 129
+              },
+              {
+                "x": 939,
+                "y": 243
+              },
+              {
+                "x": 1018,
+                "y": 255
+              },
+              {
+                "x": 1019,
+                "y": 115
+              },
+              {
+                "x": 1142,
+                "y": 121
+              },
+              {
+                "x": 1130,
+                "y": 357
+              },
+              {
+                "x": 1049,
+                "y": 393
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 9,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 320 125 365 0 Un message est caché"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 340 125 365 0 dans cette pièce, mais pas ici."
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 416,
+                "y": 44
+              },
+              {
+                "x": 414,
+                "y": 97
+              },
+              {
+                "x": 520,
+                "y": 106
+              },
+              {
+                "x": 500,
+                "y": 40
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 10,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "52"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1090 350 125 365 0 Une étagère"
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 975,
+                "y": 31
+              },
+              {
+                "x": 1190,
+                "y": 98
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "offset": 18204,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 18212
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\transverteur2.bmp",
+          "param": 16,
+          "offset": 18237
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "60 340 125 365 0 SORTIE"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1"
+            },
+            {
+              "id": 3,
+              "subtype": 22,
+              "param": "euroland 1"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "espagne = 1 then set_var espagne 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "angleterre = 1 then set_var angleterre 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "autriche = 1  then set_var autriche 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "allemagne = 1  then set_var allemagne 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "ecosse = 1  then set_var ecosse 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "belgique = 1  then set_var belgique 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "france = 1  then set_var france 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "finlande = 1  then set_var finlande 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "irlande = 1  then set_var irlande 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "italie = 1  then set_var italie 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "paysbas = 1  then set_var paysbas 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "grece = 1  then set_var grece 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "danemark = 1  then set_var danemark 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "portugal = 1  then set_var portugal 0"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "suede = 1  then set_var suede 0"
+            },
+            {
+              "id": 3,
+              "subtype": 32,
+              "param": ""
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 24,
+                "y": 310
+              },
+              {
+                "x": 4,
+                "y": 162
+              },
+              {
+                "x": 124,
+                "y": 93
+              },
+              {
+                "x": 169,
+                "y": 94
+              },
+              {
+                "x": 152,
+                "y": 315
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1430 150 125 365 0 Ordinateur du transvecteur"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\prof2.avi 1 1100 159 1300 399"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "13"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1350,
+                "y": 155
+              },
+              {
+                "x": 1550,
+                "y": 354
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "38"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "340 300 125 365 0 Une table à produits"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 8,
+            "points": [
+              {
+                "x": 311,
+                "y": 291
+              },
+              {
+                "x": 312,
+                "y": 237
+              },
+              {
+                "x": 349,
+                "y": 188
+              },
+              {
+                "x": 406,
+                "y": 179
+              },
+              {
+                "x": 532,
+                "y": 173
+              },
+              {
+                "x": 559,
+                "y": 239
+              },
+              {
+                "x": 600,
+                "y": 274
+              },
+              {
+                "x": 605,
+                "y": 298
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "690 350 125 365 0 Prof"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\pro1a.avi 1 659 166 771 286"
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 6"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 656,
+                "y": 350
+              },
+              {
+                "x": 654,
+                "y": 229
+              },
+              {
+                "x": 652,
+                "y": 164
+              },
+              {
+                "x": 698,
+                "y": 151
+              },
+              {
+                "x": 773,
+                "y": 173
+              },
+              {
+                "x": 780,
+                "y": 285
+              },
+              {
+                "x": 783,
+                "y": 349
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "200 40 125 365 0 Un diplôme"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 204,
+                "y": 77
+              },
+              {
+                "x": 294,
+                "y": 189
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1590 150 125 365 0 Le transvecteur"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\trans.avi 1 1644 182 1878 400"
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1648,
+                "y": 58
+              },
+              {
+                "x": 1869,
+                "y": 391
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 6,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "cleverte = 2 then playwav porte2.wav 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "cleverte = 2 then defcursor fleche.cur"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "cleverte = 2 then set_var cleverte -1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "cleverte = -1 then scene 44"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clejaune = 2 then playbmp ..\\..\\ecosse\\img24\\cle.bmp 0 0 250"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "clerouge = 2 then playbmp ..\\..\\ecosse\\img24\\cle.bmp 0 0 250"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "65 350 125 365 0 Un coffre fermé à clé"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 174,
+                "y": 337
+              },
+              {
+                "x": 174,
+                "y": 283
+              },
+              {
+                "x": 191,
+                "y": 258
+              },
+              {
+                "x": 286,
+                "y": 269
+              },
+              {
+                "x": 307,
+                "y": 277
+              },
+              {
+                "x": 310,
+                "y": 338
+              },
+              {
+                "x": 269,
+                "y": 354
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 7,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "830 350 125 365 0 Ordinateur du transvecteur"
+            },
+            {
+              "id": 1,
+              "subtype": 22,
+              "param": "annule 0"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\pro2.avi 1 659 166 771 286"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "13"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 798,
+                "y": 272
+              },
+              {
+                "x": 816,
+                "y": 180
+              },
+              {
+                "x": 904,
+                "y": 177
+              },
+              {
+                "x": 923,
+                "y": 277
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "offset": 20990,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 20998
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\bdmusee.bmp",
+          "param": 16,
+          "offset": 21023
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\vuemusee.avi 1"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "10"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1540 370 125 365 0 Sens de la visite"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 1511,
+                "y": 255
+              },
+              {
+                "x": 1505,
+                "y": 142
+              },
+              {
+                "x": 1588,
+                "y": 60
+              },
+              {
+                "x": 1689,
+                "y": 142
+              },
+              {
+                "x": 1680,
+                "y": 255
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 1 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "150 320 125 365 0 SORTIE"
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 98,
+                "y": 245
+              },
+              {
+                "x": 100,
+                "y": 90
+              },
+              {
+                "x": 149,
+                "y": 52
+              },
+              {
+                "x": 212,
+                "y": 49
+              },
+              {
+                "x": 275,
+                "y": 89
+              },
+              {
+                "x": 289,
+                "y": 246
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\conser5.avi 1 368 118 520 344"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "calc = 0 then playavi euroland\\conser4.avi 1 368 118 520 344"
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "calc = 0 then rundll francs.dll"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "360 350 125 365 0 Le conservateur du musée"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 12,
+            "points": [
+              {
+                "x": 397,
+                "y": 328
+              },
+              {
+                "x": 400,
+                "y": 290
+              },
+              {
+                "x": 377,
+                "y": 253
+              },
+              {
+                "x": 396,
+                "y": 149
+              },
+              {
+                "x": 426,
+                "y": 130
+              },
+              {
+                "x": 480,
+                "y": 124
+              },
+              {
+                "x": 480,
+                "y": 151
+              },
+              {
+                "x": 479,
+                "y": 189
+              },
+              {
+                "x": 506,
+                "y": 269
+              },
+              {
+                "x": 474,
+                "y": 287
+              },
+              {
+                "x": 508,
+                "y": 331
+              },
+              {
+                "x": 451,
+                "y": 334
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "34"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "760 220 125 365 0 Le tableau de la légende."
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "760 240 125 365 0 Clique dessus si tu veux"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "760 260 125 365 0 revoir l'introduction."
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 16,
+            "points": [
+              {
+                "x": 2311,
+                "y": 187
+              },
+              {
+                "x": 2321,
+                "y": 137
+              },
+              {
+                "x": 2352,
+                "y": 134
+              },
+              {
+                "x": 2352,
+                "y": 119
+              },
+              {
+                "x": 2413,
+                "y": 115
+              },
+              {
+                "x": 2421,
+                "y": 137
+              },
+              {
+                "x": 2422,
+                "y": 185
+              },
+              {
+                "x": 2398,
+                "y": 197
+              },
+              {
+                "x": 2392,
+                "y": 237
+              },
+              {
+                "x": 2408,
+                "y": 248
+              },
+              {
+                "x": 2414,
+                "y": 313
+              },
+              {
+                "x": 2323,
+                "y": 319
+              },
+              {
+                "x": 2302,
+                "y": 306
+              },
+              {
+                "x": 2338,
+                "y": 282
+              },
+              {
+                "x": 2326,
+                "y": 247
+              },
+              {
+                "x": 2333,
+                "y": 200
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus2 = 0 then playtext 1050 40 125 365 0 Question Bonus"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus2 = 2 then playtext 1050 40 125 365 0 Tu as déjà répondu"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus1 = 0 then playwav bruit\\boing.wav 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus2 = 0 then set_var bonus2 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus2 = 1 then scene 35"
+            }
+          ],
+          "geometry": {
+            "cursorId": 107,
+            "pointCount": 13,
+            "points": [
+              {
+                "x": 1045,
+                "y": 99
+              },
+              {
+                "x": 1093,
+                "y": 98
+              },
+              {
+                "x": 1092,
+                "y": 67
+              },
+              {
+                "x": 1110,
+                "y": 67
+              },
+              {
+                "x": 1120,
+                "y": 95
+              },
+              {
+                "x": 1168,
+                "y": 100
+              },
+              {
+                "x": 1186,
+                "y": 246
+              },
+              {
+                "x": 1160,
+                "y": 252
+              },
+              {
+                "x": 1185,
+                "y": 324
+              },
+              {
+                "x": 1076,
+                "y": 326
+              },
+              {
+                "x": 1085,
+                "y": 250
+              },
+              {
+                "x": 1048,
+                "y": 245
+              },
+              {
+                "x": 1053,
+                "y": 230
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "48"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 13,
+            "points": [
+              {
+                "x": 1310,
+                "y": 341
+              },
+              {
+                "x": 1313,
+                "y": 293
+              },
+              {
+                "x": 1288,
+                "y": 262
+              },
+              {
+                "x": 1322,
+                "y": 233
+              },
+              {
+                "x": 1335,
+                "y": 182
+              },
+              {
+                "x": 1392,
+                "y": 148
+              },
+              {
+                "x": 1411,
+                "y": 188
+              },
+              {
+                "x": 1396,
+                "y": 216
+              },
+              {
+                "x": 1409,
+                "y": 235
+              },
+              {
+                "x": 1446,
+                "y": 248
+              },
+              {
+                "x": 1425,
+                "y": 292
+              },
+              {
+                "x": 1450,
+                "y": 344
+              },
+              {
+                "x": 1352,
+                "y": 356
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 6,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "49"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 15,
+            "points": [
+              {
+                "x": 1762,
+                "y": 344
+              },
+              {
+                "x": 1790,
+                "y": 296
+              },
+              {
+                "x": 1761,
+                "y": 251
+              },
+              {
+                "x": 1793,
+                "y": 238
+              },
+              {
+                "x": 1824,
+                "y": 233
+              },
+              {
+                "x": 1818,
+                "y": 205
+              },
+              {
+                "x": 1794,
+                "y": 194
+              },
+              {
+                "x": 1806,
+                "y": 152
+              },
+              {
+                "x": 1880,
+                "y": 185
+              },
+              {
+                "x": 1893,
+                "y": 232
+              },
+              {
+                "x": 1921,
+                "y": 263
+              },
+              {
+                "x": 1908,
+                "y": 285
+              },
+              {
+                "x": 1885,
+                "y": 317
+              },
+              {
+                "x": 1904,
+                "y": 342
+              },
+              {
+                "x": 1865,
+                "y": 364
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 7,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1980 340 125 365 0 La momie du pharaon TOUTHENEURO"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 14,
+            "points": [
+              {
+                "x": 2004,
+                "y": 325
+              },
+              {
+                "x": 1967,
+                "y": 314
+              },
+              {
+                "x": 1980,
+                "y": 287
+              },
+              {
+                "x": 1939,
+                "y": 125
+              },
+              {
+                "x": 1969,
+                "y": 104
+              },
+              {
+                "x": 1972,
+                "y": 63
+              },
+              {
+                "x": 2002,
+                "y": 42
+              },
+              {
+                "x": 2068,
+                "y": 55
+              },
+              {
+                "x": 2073,
+                "y": 95
+              },
+              {
+                "x": 2073,
+                "y": 111
+              },
+              {
+                "x": 2106,
+                "y": 131
+              },
+              {
+                "x": 2094,
+                "y": 189
+              },
+              {
+                "x": 2069,
+                "y": 288
+              },
+              {
+                "x": 2065,
+                "y": 325
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "offset": 23230,
+      "files": [
+        {
+          "slot": 6,
+          "filename": "euroland\\armoire3.bmp",
+          "param": 16,
+          "offset": 23270
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 4,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "sacados = 0 then scene 9"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "sacados = 0 then playtext 100 360 125 365 0 Un sac à dos"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "allumette != 0 then addbmp al euroland\\rollover\\allumette2.bmp 0 360 36"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "sacados  != 0 then addbmp lesac euroland\\rollover\\sac2.bmp  0 52 177"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 86,
+                "y": 350
+              },
+              {
+                "x": 69,
+                "y": 340
+              },
+              {
+                "x": 87,
+                "y": 268
+              },
+              {
+                "x": 104,
+                "y": 210
+              },
+              {
+                "x": 144,
+                "y": 184
+              },
+              {
+                "x": 203,
+                "y": 180
+              },
+              {
+                "x": 258,
+                "y": 199
+              },
+              {
+                "x": 269,
+                "y": 255
+              },
+              {
+                "x": 283,
+                "y": 294
+              },
+              {
+                "x": 290,
+                "y": 350
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "5"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "22 1 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "280 370 125 365 0 SORTIE"
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 355
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 50 125 365 0 Il y a une autre"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 70 125 365 0 bouteille en Europe"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 90 125 365 0 elle te sera utile si tu"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 110 125 365 0 la remplis d'eau."
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 130 125 365 0 Tu ne peux pas"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "230 150 125 365 0 prendre celles-ci."
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 101,
+                "y": 4
+              },
+              {
+                "x": 226,
+                "y": 131
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "allumette = 0 then playtext 400 60 125 365 0 Une boîte d'allumettes"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "sacados = 1 then if allumette = 0 then set_var allumette 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "allumette != 0 then addbmp al euroland\\rollover\\allumette2.bmp 0 360 36"
+            },
+            {
+              "id": 1,
+              "subtype": 39,
+              "param": "22 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "allumette = 0 then playtext 20 370 125 365 0 Il te faut un sac à dos pour le mettre dedans"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 434,
+                "y": 126
+              },
+              {
+                "x": 432,
+                "y": 105
+              },
+              {
+                "x": 531,
+                "y": 74
+              },
+              {
+                "x": 554,
+                "y": 97
+              },
+              {
+                "x": 559,
+                "y": 121
+              },
+              {
+                "x": 469,
+                "y": 143
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "400 340 125 365 0 Ces livres ne te"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "400 360 125 365 0 seront d'aucune"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "400 380 125 365 0 utilité"
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 348,
+                "y": 238
+              },
+              {
+                "x": 595,
+                "y": 346
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "offset": 24986,
+      "files": [
+        {
+          "slot": 6,
+          "filename": "euroland\\infosac.bmp",
+          "param": 16,
+          "offset": 25026
+        },
+        {
+          "slot": 7,
+          "filename": "sacados.htm",
+          "param": 0,
+          "offset": 25054
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 0,
+        "commands": []
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 1 #000000 Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "455 360 125 365 0 Quitter"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "8"
+            },
+            {
+              "id": 3,
+              "subtype": 22,
+              "param": "sacados 1"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 536,
+                "y": 382
+              },
+              {
+                "x": 533,
+                "y": 334
+              },
+              {
+                "x": 572,
+                "y": 285
+              },
+              {
+                "x": 613,
+                "y": 283
+              },
+              {
+                "x": 622,
+                "y": 324
+              },
+              {
+                "x": 632,
+                "y": 367
+              },
+              {
+                "x": 621,
+                "y": 393
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "offset": 25377,
+      "files": [
+        {
+          "slot": 4,
+          "filename": "music.wav",
+          "param": 0,
+          "offset": 25401
+        },
+        {
+          "slot": 6,
+          "filename": "euroland\\calc.bmp",
+          "param": 16,
+          "offset": 25426
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 4,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "calc = 0 then playtext 320 180 125 365 0 La calculette"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "calc = 0 then addbmp calc euroland\\rollover\\calc2.bmp 0 282 95"
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "calc = 0 then playwav bruit\\Siren.wav 2"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "calc = 0 then playavi sirene.avi 2 118 214 510 318"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 252,
+                "y": 61
+              },
+              {
+                "x": 300,
+                "y": 41
+              },
+              {
+                "x": 347,
+                "y": 67
+              },
+              {
+                "x": 352,
+                "y": 150
+              },
+              {
+                "x": 316,
+                "y": 184
+              },
+              {
+                "x": 282,
+                "y": 184
+              },
+              {
+                "x": 239,
+                "y": 146
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 1 #ffffff Comic sans MS"
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "250 370 125 365 0 SORTIE"
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "7"
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 350
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "================================================================================",
+    "VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)",
+    "================================================================================",
+    "✓ Signature VNFILE @ 0x00000009",
+    "✓ Début estimé des scènes @ 0x00001163",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #1 @ 0x00001163",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x0000116C: 'music.wav' (param=2)",
+    "    Fichier 3 @ 0x00001185: 'euroland\\face.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (6 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #2 @ 0x00001A4D",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1A56. Backtracking.",
+    "    Fichier 5 @ 0x00001A76: 'euroland\\bureaubanquier.bmp' (param=16)",
+    "\n  [HOTSPOTS] (6 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #3 @ 0x00001E3D",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1E46. Backtracking.",
+    "    Fichier 3 @ 0x00001E56: 'music.wav' (param=6)",
+    "    Fichier 5 @ 0x00001E6F: 'euroland\\banque.bmp' (param=16)",
+    "\n  [HOTSPOTS] (5 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #4 @ 0x00002441",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x0000244A: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x00002463: 'euroland\\biblio.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (26 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #5 @ 0x00003B1A",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x00003B23: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x00003B3C: 'euroland\\maison.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (11 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #6 @ 0x0000471B",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x00004724: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x0000473D: 'euroland\\transverteur2.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (8 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #7 @ 0x000051FD",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x00005206: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x0000521F: 'euroland\\bdmusee.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (8 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #8 @ 0x00005ABD",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x5AC6. Backtracking.",
+    "    Fichier 5 @ 0x00005AE6: 'euroland\\armoire3.bmp' (param=16)",
+    "\n  [HOTSPOTS] (5 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #9 @ 0x00006199",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x61A2. Backtracking.",
+    "    Fichier 5 @ 0x000061C2: 'euroland\\infosac.bmp' (param=16)",
+    "    Fichier 6 @ 0x000061DE: 'sacados.htm' (param=0)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "    ℹ️ Suspicious Command ID 30 in Init Script. Stopping to avoid garbage data.",
+    "\n  [HOTSPOTS] (1 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #10 @ 0x00006320",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x6329. Backtracking.",
+    "    Fichier 3 @ 0x00006339: 'music.wav' (param=0)",
+    "    Fichier 5 @ 0x00006352: 'euroland\\calc.bmp' (param=16)",
+    "\n  [HOTSPOTS] (2 items)",
+    "\n================================================================================",
+    "Parsé 10 scènes",
+    "================================================================================"
+  ]
+}

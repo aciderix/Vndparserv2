@@ -1,4 +1,4 @@
-import { ParseResult, ParsedScene, SceneFile, InitScript, SceneConfig, Hotspot, HotspotCommand } from '../types';
+import { ParseResult, ParsedScene, SceneFile, InitScript, SceneConfig, Hotspot, HotspotCommand } from '../types.ts';
 
 export class VNDSequentialParser {
   private data: DataView;
