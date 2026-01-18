@@ -52,6 +52,25 @@ Un fichier VND est structuré ainsi :
 - **Encoding des strings:** Windows-1252 (proche de Latin-1)
 - **Format strings:** Pascal Strings (longueur en u32 + données)
 
+### ⚙️ Moteur de Jeu : Europeo
+
+Le fichier VND est exécuté par le **moteur Europeo**, qui utilise un système d'**opcodes** pour interpréter les commandes.
+
+**📖 Documentation complète :** Voir [`OPCODES_REFERENCE.md`](./OPCODES_REFERENCE.md)
+
+**Concepts clés :**
+- **Opcodes** : Lettres (a-z) qui déclenchent des fonctions spécifiques
+- **Streaming** : Le moteur lit le flux binaire et consomme les nombres avec `atol()` jusqu'à rencontrer une lettre (opcode)
+- **Navigation** : Plusieurs modes (relatif, absolu, cross-projet)
+- **INDEX_ID** : Valeur de base pour les calculs de navigation relative (définie dans le .INI)
+
+**Exemples d'opcodes importants :**
+- `i` (Index 9) : Charger et afficher une image
+- `f` (Index 6) : Saut de scène
+- `h` (Index 8) : Afficher un tooltip
+- `u` (Index 21) : Logique conditionnelle (if/then/else)
+- `runprj` (Index 31) : Charger un nouveau projet .vnp
+
 ---
 
 ## 📦 STRUCTURE D'UNE SCÈNE
