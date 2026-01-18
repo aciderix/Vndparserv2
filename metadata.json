@@ -1,0 +1,5 @@
+{
+  "name": "VND Web Parser",
+  "description": "Une version web du parser séquentiel VND, permettant d'analyser la structure des fichiers de Visual Novel directement dans le navigateur.",
+  "requestFramePermissions": []
+}
