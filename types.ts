@@ -25,6 +25,23 @@ export interface HotspotCommand {
   id: number;
   subtype: number;
   param: string;
+  interpreted?: {
+    opcodeInfo?: {
+      name: string;
+      description: string;
+    };
+    parsedParam?: {
+      type?: string;
+      file?: string;
+      args?: string[];
+      condition?: string;
+      action?: string;
+      targetFile?: string;
+      targetScene?: number;
+      value?: number;
+      opcode?: string;
+    };
+  };
 }
 
 export interface HotspotGeometry {
@@ -49,7 +66,20 @@ export interface ParsedScene {
   hotspots: Hotspot[];
 }
 
+export interface VNDMetadata {
+  version?: string;
+  engine?: string;
+  publisher?: string;
+  resolution?: {
+    width: number;
+    height: number;
+    colorDepth: number;
+  };
+  indexId?: number;
+}
+
 export interface ParseResult {
+  metadata?: VNDMetadata;
   scenes: ParsedScene[];
   logs: string[];
 }

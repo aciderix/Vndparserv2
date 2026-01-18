@@ -13,6 +13,127 @@ export class VNDSequentialParser {
     this.textDecoder = new TextDecoder('windows-1252'); // Close equivalent to latin-1
   }
 
+  // Opcode info mapping (from reverse engineering)
+  private getOpcodeInfo(id: number, subtype: number): { name: string; description: string } | null {
+    // Based on OPCODES_REFERENCE.md
+    const opcodeMap: Record<string, { name: string; description: string }> = {
+      // ID 0: Display / Text Attributes
+      '0-39': { name: 'Config Police', description: 'Définit la font et la couleur' },
+      '0-38': { name: 'Zone Texte / Bulle', description: 'Zone cliquable et texte associé' },
+      '0-24': { name: 'Zone Image', description: 'Affiche une image statique ou animée' },
+
+      // ID 1: Interaction / Multimedia Assets
+      '1-6': { name: 'Son Interface / Curseur', description: 'Son système ou ID Curseur' },
+      '1-9': { name: 'Media Cmd (Vidéo)', description: 'Lecture de fichier AVI' },
+
+      // ID 2: Variable operations
+      '2-21': { name: 'Opération Variable', description: 'Manipulation de variable (set, inc, dec)' },
+      '2-22': { name: 'Set Variable', description: 'Définit une variable' },
+
+      // ID 3: Logic / Scripting
+      '3-21': { name: 'Script Logique', description: 'Logique conditionnelle (if/then/else)' },
+    };
+
+    const key = `${id}-${subtype}`;
+    return opcodeMap[key] || null;
+  }
+
+  // Interpret hotspot command parameters
+  private interpretCommand(cmd: HotspotCommand): void {
+    const param = cmd.param;
+
+    // Get opcode info
+    const opcodeInfo = this.getOpcodeInfo(cmd.id, cmd.subtype);
+    if (opcodeInfo) {
+      cmd.interpreted = cmd.interpreted || {};
+      cmd.interpreted.opcodeInfo = opcodeInfo;
+    }
+
+    // Parse runprj commands
+    if (param.includes('runprj')) {
+      const runprjMatch = param.match(/runprj\s+([^\s]+)\s+(\d+)/);
+      if (runprjMatch) {
+        cmd.interpreted = cmd.interpreted || {};
+        cmd.interpreted.parsedParam = {
+          type: 'runprj',
+          action: 'Load Project',
+          targetFile: runprjMatch[1].replace(/\\/g, '/'),
+          targetScene: parseInt(runprjMatch[2])
+        };
+
+        // Extract condition if present
+        const condMatch = param.match(/(.+?)\s+then\s+runprj/);
+        if (condMatch) {
+          cmd.interpreted.parsedParam.condition = condMatch[1].trim();
+        }
+      }
+    }
+    // Parse set_var/inc_var/dec_var commands
+    else if (param.includes('set_var') || param.includes('inc_var') || param.includes('dec_var')) {
+      const varMatch = param.match(/(set_var|inc_var|dec_var)\s+(\w+)\s+(\d+)/);
+      if (varMatch) {
+        cmd.interpreted = cmd.interpreted || {};
+        cmd.interpreted.parsedParam = {
+          type: 'variable_op',
+          action: varMatch[1],
+          file: varMatch[2], // variable name
+          value: parseInt(varMatch[3])
+        };
+      }
+    }
+    // Parse AVI/media files
+    else if (param.includes('.avi') || param.includes('.wav') || param.includes('.mid')) {
+      const mediaMatch = param.match(/([^\s]+\.(avi|wav|mid|bmp))\s*(.*)/i);
+      if (mediaMatch) {
+        cmd.interpreted = cmd.interpreted || {};
+        const ext = mediaMatch[2].toLowerCase();
+        cmd.interpreted.parsedParam = {
+          type: ext === 'avi' ? 'video' : ext === 'wav' ? 'audio' : ext === 'mid' ? 'music' : 'image',
+          file: mediaMatch[1].replace(/\\/g, '/'),
+          args: mediaMatch[3] ? mediaMatch[3].split(/\s+/) : []
+        };
+      }
+    }
+    // Parse font/color definitions
+    else if (param.match(/^\d+\s+\d+\s+#[0-9a-fA-F]{6}/)) {
+      const fontMatch = param.match(/^(\d+)\s+(\d+)\s+(#[0-9a-fA-F]{6})\s*(.*)/);
+      if (fontMatch) {
+        cmd.interpreted = cmd.interpreted || {};
+        cmd.interpreted.parsedParam = {
+          type: 'font',
+          args: [fontMatch[1], fontMatch[2], fontMatch[3], fontMatch[4] || '']
+        };
+      }
+    }
+  }
+
+  // Parse VND header metadata
+  private parseMetadata(): any {
+    const savedOffset = this.offset;
+
+    try {
+      // Read only critical metadata from fixed offsets (resolution + INDEX_ID)
+      // Skip text parsing for now as they're not essential for game porting
+
+      // Resolution data at fixed offsets
+      const width = this.data.getUint32(0x4E, true);
+      const height = this.data.getUint32(0x52, true);
+      const colorDepth = this.data.getUint32(0x56, true);
+      const indexId = this.data.getUint32(0x5A, true);
+
+      return {
+        resolution: { width, height, colorDepth },
+        indexId
+      };
+    } catch (e) {
+      // If header parsing fails, return empty metadata
+      console.error('Metadata parsing error:', e);
+      return {};
+    } finally {
+      this.offset = savedOffset;
+    }
+  }
+
   private log(message: string) {
     this.logs.push(message);
     console.log(message);
@@ -550,7 +671,9 @@ export class VNDSequentialParser {
         const cmdId = this.readU32();
         const cmdSubtype = this.readU32(); // Often 0, sometimes 1
         const cmdParam = this.readPascalString();
-        commands.push({ id: cmdId, subtype: cmdSubtype, param: cmdParam });
+        const cmd: HotspotCommand = { id: cmdId, subtype: cmdSubtype, param: cmdParam };
+        this.interpretCommand(cmd); // Add interpretation
+        commands.push(cmd);
       }
 
       if (this.offset + 8 > this.data.byteLength) break;
@@ -580,11 +703,17 @@ export class VNDSequentialParser {
 
   public parse(maxScenes: number = 5): ParseResult {
     const scenes: ParsedScene[] = [];
-    this.logs = []; 
+    this.logs = [];
 
     this.log("=".repeat(80));
     this.log(`VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)`);
     this.log("=".repeat(80));
+
+    // Parse metadata from header
+    const metadata = this.parseMetadata();
+    if (metadata.indexId !== undefined) {
+      this.log(`ℹ️ INDEX_ID: ${metadata.indexId}`);
+    }
 
     try {
       this.skipHeader();
@@ -682,6 +811,6 @@ export class VNDSequentialParser {
       this.log(`CRITICAL ERROR: ${e.message}`);
     }
 
-    return { scenes, logs: this.logs };
+    return { metadata, scenes, logs: this.logs };
   }
 }
