@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "resolution": {
+      "width": 558843216,
+      "height": 1392508928,
+      "colorDepth": 1465140815
+    },
+    "indexId": 1548046913
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "offset": 4883,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "Frontal",
+          "param": 0,
+          "offset": 4891
+        },
+        {
+          "slot": 8,
+          "filename": "interface.bmp",
+          "param": 0,
+          "offset": 4946
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 9,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 33,
+              "param": "..\\frontal\\vnoption.dll"
+            },
+            {
+              "id": 0,
+              "subtype": 10,
+              "param": "interface\\jeu.bmp 0 176 257"
+            },
+            {
+              "id": 0,
+              "subtype": 11,
+              "param": "..\\..\\couleurs1\\digit\\super.wav",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "../../couleurs1/digit/super.wav",
+                  "args": []
+                }
+              }
+            },
+            {
+              "id": 3,
+              "subtype": 26,
+              "param": "0"
+            },
+            {
+              "id": 3,
+              "subtype": 22,
+              "param": "jeu 0"
+            },
+            {
+              "id": 3,
+              "subtype": 22,
+              "param": "score 0"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 14,
+            "points": [
+              {
+                "x": 219,
+                "y": 475
+              },
+              {
+                "x": 218,
+                "y": 442
+              },
+              {
+                "x": 245,
+                "y": 405
+              },
+              {
+                "x": 186,
+                "y": 362
+              },
+              {
+                "x": 185,
+                "y": 294
+              },
+              {
+                "x": 212,
+                "y": 257
+              },
+              {
+                "x": 281,
+                "y": 258
+              },
+              {
+                "x": 327,
+                "y": 289
+              },
+              {
+                "x": 340,
+                "y": 325
+              },
+              {
+                "x": 325,
+                "y": 378
+              },
+              {
+                "x": 309,
+                "y": 402
+              },
+              {
+                "x": 281,
+                "y": 398
+              },
+              {
+                "x": 308,
+                "y": 442
+              },
+              {
+                "x": 312,
+                "y": 478
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 10,
+              "param": "interface\\livres.bmp 0 0 273"
+            },
+            {
+              "id": 0,
+              "subtype": 11,
+              "param": "..\\..\\couleurs1\\digit\\yaou.wav",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "../../couleurs1/digit/yaou.wav",
+                  "args": []
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 31,
+              "param": "..\\biblio\\biblio.vnp 1"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 1,
+                "y": 476
+              },
+              {
+                "x": 0,
+                "y": 293
+              },
+              {
+                "x": 51,
+                "y": 300
+              },
+              {
+                "x": 67,
+                "y": 290
+              },
+              {
+                "x": 84,
+                "y": 299
+              },
+              {
+                "x": 109,
+                "y": 289
+              },
+              {
+                "x": 172,
+                "y": 326
+              },
+              {
+                "x": 118,
+                "y": 389
+              },
+              {
+                "x": 92,
+                "y": 438
+              },
+              {
+                "x": 146,
+                "y": 479
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 10,
+              "param": "interface\\tirelire.bmp 0 483 207"
+            },
+            {
+              "id": 0,
+              "subtype": 11,
+              "param": "..\\..\\couleurs1\\digit\\ouais.wav",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "../../couleurs1/digit/ouais.wav",
+                  "args": []
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 17,
+              "param": "tirelire.exe"
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 525,
+                "y": 470
+              },
+              {
+                "x": 536,
+                "y": 435
+              },
+              {
+                "x": 554,
+                "y": 416
+              },
+              {
+                "x": 554,
+                "y": 373
+              },
+              {
+                "x": 484,
+                "y": 316
+              },
+              {
+                "x": 536,
+                "y": 268
+              },
+              {
+                "x": 556,
+                "y": 220
+              },
+              {
+                "x": 600,
+                "y": 205
+              },
+              {
+                "x": 638,
+                "y": 279
+              },
+              {
+                "x": 638,
+                "y": 479
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 10,
+              "param": "interface\\oui.bmp 0 470 0"
+            },
+            {
+              "id": 0,
+              "subtype": 11,
+              "param": "..\\..\\couleurs1\\digit\\ouvre.wav",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "../../couleurs1/digit/ouvre.wav",
+                  "args": []
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 9,
+            "points": [
+              {
+                "x": 503,
+                "y": 6
+              },
+              {
+                "x": 477,
+                "y": 27
+              },
+              {
+                "x": 475,
+                "y": 70
+              },
+              {
+                "x": 492,
+                "y": 115
+              },
+              {
+                "x": 517,
+                "y": 159
+              },
+              {
+                "x": 567,
+                "y": 159
+              },
+              {
+                "x": 585,
+                "y": 92
+              },
+              {
+                "x": 600,
+                "y": 36
+              },
+              {
+                "x": 569,
+                "y": 7
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "2",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 10,
+              "param": "interface\\video.bmp 0 0 0"
+            },
+            {
+              "id": 0,
+              "subtype": 11,
+              "param": "ouvre2.wav",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "ouvre2.wav",
+                  "args": []
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 8,
+            "points": [
+              {
+                "x": 163,
+                "y": 7
+              },
+              {
+                "x": 145,
+                "y": 38
+              },
+              {
+                "x": 164,
+                "y": 73
+              },
+              {
+                "x": 207,
+                "y": 100
+              },
+              {
+                "x": 263,
+                "y": 78
+              },
+              {
+                "x": 340,
+                "y": 87
+              },
+              {
+                "x": 366,
+                "y": 48
+              },
+              {
+                "x": 346,
+                "y": 4
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "================================================================================",
+    "VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)",
+    "================================================================================",
+    "ℹ️ INDEX_ID: 1548046913",
+    "✓ Signature VNFILE @ 0x00000009",
+    "⚠️ Utilise fallback @ 0x00000135",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #1 @ 0x00001312",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x0000131B: 'Frontal' (param=0)",
+    "    Fichier 7 @ 0x00001352: 'interface.bmp' (param=0)",
+    "    ℹ️ Detected Hotspot structure at 0x138B inside script area. Stopping script parsing.",
+    "    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.",
+    "\n  [HOTSPOTS] (5 items)",
+    "\n❌ Impossible de trouver un début de scène valide après 258 octets.",
+    "\n================================================================================",
+    "Parsé 1 scènes",
+    "================================================================================"
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "metadata": {
+    "resolution": {
+      "width": 640,
+      "height": 480,
+      "colorDepth": 16
+    },
+    "indexId": 1
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "offset": 332,
+      "files": [
+        {
+          "slot": 4,
+          "filename": "..\\..\\allem\\img24\\berlin.bmp",
+          "param": 16,
+          "offset": 356
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 0,
+        "commands": []
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": []
+    },
+    {
+      "id": 2,
+      "offset": 1258,
+      "files": [
+        {
+          "slot": 1,
+          "filename": "inv.dll",
+          "param": 106,
+          "offset": 1258
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 47,
+        "commands": [
+          {
+            "id": 2,
+            "param": "Zone Def: [466, 416, 526, 466, 1, 0, 0]"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 7,
+            "param": "........,...etoile ..\\..\\barre\\images (P:1685221212)"
+          }
+        ]
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": []
+    },
+    {
+      "id": 3,
+      "offset": 18274,
+      "files": [
+        {
+          "slot": 1,
+          "filename": "..\\frontal\\vnoption.dll",
+          "param": 2,
+          "offset": 18274
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 172,
+        "commands": [
+          {
+            "id": 39,
+            "param": "18 0 #ffffff Comic sans MS (P:2)"
+          },
+          {
+            "id": 27,
+            "param": "toolbar ..\\..\\barre\\images\\barre.bmp 6 0 400 640 480 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 1 then addbmp fiole ..\\..\\barre\\images\\f1.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 2 then addbmp fiole ..\\..\\barre\\images\\f2.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 3 then addbmp fiole ..\\..\\barre\\images\\f3.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 4 then addbmp fiole ..\\..\\barre\\images\\f4.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 5 then addbmp fiole ..\\..\\barre\\images\\f5.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 6 then addbmp fiole ..\\..\\barre\\images\\f6.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 7 then addbmp fiole ..\\..\\barre\\images\\f7.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 8 then addbmp fiole ..\\..\\barre\\images\\f8.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 9 then addbmp fiole ..\\..\\barre\\images\\f9.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 10 then addbmp fiole ..\\..\\barre\\images\\f10.bmp 6 197 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 11 then addbmp fiole ..\\..\\barre\\images\\f11.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "fiole = 12 then addbmp fiole ..\\..\\barre\\images\\f12.bmp 6 196 461 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "suede = 1 then  addbmp info ..\\..\\barre\\images\\p_suede.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "portugal = 1 then  addbmp info ..\\..\\barre\\images\\p_port.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "allemagne = 1 then  addbmp info ..\\..\\barre\\images\\p_all.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "france = 1 then  addbmp info ..\\..\\barre\\images\\p_france.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "angleterre = 1 then  addbmp info ..\\..\\barre\\images\\p_angl.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "autriche = 1 then  addbmp info ..\\..\\barre\\images\\p_autriche.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "danemark = 1 then  addbmp info ..\\..\\barre\\images\\p_danemark.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "ecosse = 1 then  addbmp info ..\\..\\barre\\images\\p_ecosse.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "euroland = 1 then  addbmp info ..\\..\\barre\\images\\p_euroland.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "espagne = 1 then  addbmp info ..\\..\\barre\\images\\p_espagne.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "finlande = 1 then  addbmp info ..\\..\\barre\\images\\p_finland.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "grece = 1 then  addbmp info ..\\..\\barre\\images\\p_grece.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "irlande = 1 then  addbmp info ..\\..\\barre\\images\\p_irlande.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "italie = 1 then  addbmp info ..\\..\\barre\\images\\p_italie.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "belgique = 1 then  addbmp info ..\\..\\barre\\images\\p_belgique.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 21,
+            "param": "paysbas = 1 then  addbmp info ..\\..\\barre\\images\\p_pays.bmp 6 452 400 (P:2)"
+          },
+          {
+            "id": 41,
+            "param": "score 6 15 415 160 470 0 <score> (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [571, 419, 636, 475, 3, 7, 1]"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then rundll ..\\barre\\euro32.dll (P:0)"
+          },
+          {
+            "id": 28,
+            "param": "calc1 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp etoile ..\\..\\barre\\images\\calc2.bmp 6 249 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp etoile1 ..\\..\\barre\\images\\textetc.bmp 6 0 450 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [243, 414, 290, 451, 3, 8, 1]"
+          },
+          {
+            "id": 9,
+            "param": "..\\..\\couleurs1\\movie\\euroland\\aide2.avi 1 0 0 1 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then rundll ..\\barre\\inv.dll (P:0)"
+          },
+          {
+            "id": 28,
+            "param": "sac (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp etoile ..\\..\\barre\\images\\sac2.bmp 6 385 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp etoile1 ..\\..\\barre\\images\\textes.bmp 6 0 454 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [393, 413, 447, 449, 3, 93, 1]"
+          },
+          {
+            "id": 26,
+            "param": "0 (P:1)"
+          },
+          {
+            "id": 26,
+            "param": "fleche.cur (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "clerouge = 2 then dec_var clerouge 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ballon1 = 2 then dec_var ballon1 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bouee = 2 then dec_var bouee 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bout_plo = 2 then dec_var bout_plo 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bus = 2 then dec_var bus 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "castagnette = 2 then dec_var castagnette 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ciseaux = 2 then dec_var ciseaux 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "clejaune = 2 then dec_var clejaune 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "guitare = 2 then dec_var guitare 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "harpon = 2 then dec_var harpon 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "helice = 2 then dec_var helice 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "loupe = 2 then dec_var loupe 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "masque = 2 then dec_var masque 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "masse = 2 then dec_var masse 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "pain = 2 then dec_var pain 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "palme = 2 then dec_var palme 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "photo = 2 then dec_var photo 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "piece = 2 then dec_var piece 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "pier_berlin = 2 then dec_var pier_berlin 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "raquette = 2 then dec_var raquette 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ressort = 2 then dec_var ressort 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "cheval = 2 then dec_var cheval 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "riz = 2 then dec_var riz 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ruban = 2 then dec_var ruban 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "sabot1 = 2 then dec_var sabot1 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "sabot2 = 2 then dec_var sabot2 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "scotch = 2 then dec_var scotch 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "taillepierre = 2 then dec_var taillepierre 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ap_photo = 2 then dec_var ap_photo 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "houblon = 2 then dec_var houblon 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "chewing = 2 then dec_var chewing 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "cleverte = 2 then dec_var cleverte 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "partition = 2 then dec_var partition 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "laine = 2 then dec_var laine 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tondeuse = 2 then dec_var tondeuse 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tournevis = 2 then dec_var tournevis 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "cire = 2 then dec_var cire 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "chianti = 2 then dec_var chianti 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "rouedent = 2 then dec_var rouedent 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "pierreor = 2 then dec_var pierreor 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "papiercado = 2 then dec_var papiercado 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "hotte = 2 then dec_var  hotte 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "levure = 2 then dec_var  levure 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bouteille = 2 then dec_var bouteille 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "parfum = 2 then dec_var parfum 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "rouge = 2 then dec_var rouge 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bisous = 2 then dec_var bisous 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ap = 2 then dec_var api 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "pince = 2 then dec_var pince 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tulipejaune = 2 then dec_var tulipejaune 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tulipeorange = 2 then dec_var tulipeorange 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tuliperouge = 2 then dec_var tuliperouge 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tulipeverte = 2 then dec_var tulipeverte 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "tulipeviolet = 2 then dec_var tulipeviolet 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "farine = 2 then dec_var farine 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "saliere = 2 then dec_var saliere 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bougie = 2 then dec_var bougie 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "seche = 2 then dec_var seche 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bout_eau = 2 then dec_var bout_eau 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "dorade = 2 then dec_var dorade 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "moule = 2 then dec_var moule 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "ail = 2 then dec_var ail 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "poivrouge = 2 then dec_var poivrouge 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "poivjaune = 2 then dec_var poivjaune 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "oignon = 2 then dec_var oignon 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "olive = 2 then dec_var olive 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bouillon = 2 then dec_var bouillon 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "violon = 2 then dec_var violon 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "skate = 2 then dec_var skate 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "champagne = 2 then dec_var champagne 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fromage = 2 then dec_var fromage 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "bonnet = 2 then dec_var bonnet 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "huile = 2 then dec_var huile 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "orge = 2 then dec_var orge 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "burette = 2 then dec_var burette 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "allumette = 2 then dec_var allumette 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "chouetteor = 2 then dec_var chouetteor 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "chouette = 2 then dec_var chouette 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "sirop = 2 then dec_var sirop 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fiolegrece = 2 then dec_var  fiolegrece 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fiolegrece2 = 2 then dec_var  fiolegrece2 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleecosse = 2 then dec_var  fioleecosse 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleirlande = 2 then dec_var  fioleirlande 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleespagne = 2 then dec_var  fioleespagne 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fiolesuede = 2 then dec_var  fiolesuede 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fiolefinlande = 2 then dec_var  fiolefinlande 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleautriche = 2 then dec_var  fioleautriche 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fiolepaysbas = 2 then dec_var  fiolepaysbas 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleespagne2 = 2 then dec_var  fioleespagne2 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleitalie = 2 then dec_var  fioleitalie 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "fioleangleterre = 2 then dec_var  fioleangleterre 1 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [551, 463, 558, 470, 3, 10, 1]"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then playavi ..\\..\\couleurs1\\movie\\retour.avi 1 (P:1)"
+          },
+          {
+            "id": 31,
+            "param": "..\\couleurs1\\couleurs1.vnp 1 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then dec_var score 50 (P:1)"
+          },
+          {
+            "id": 41,
+            "param": "score 6 25 410 160 470 0 <score> (P:0)"
+          },
+          {
+            "id": 28,
+            "param": "active (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp etoile ..\\..\\barre\\images\\trans2.bmp 6 162 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp etoile1 ..\\..\\barre\\images\\textetr.bmp 6 0 450 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp telep  ..\\..\\barre\\images\\telep.bmp 6 316 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [166, 413, 222, 454, 3, 9, 1]"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then runprj ..\\couleurs1\\couleurs1.vnp 4 (P:1)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then dec_var score 1 (P:1)"
+          },
+          {
+            "id": 41,
+            "param": "score 6 25 410 160 470 0 <score> (P:0)"
+          },
+          {
+            "id": 28,
+            "param": "telep (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp etoile ..\\..\\barre\\images\\telep2.bmp 6 317 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "telephone = 1 then addbmp etoile1 ..\\..\\barre\\images\\textet.bmp 6 0 450 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "trans = 1 then addbmp active  ..\\..\\barre\\images\\trans.bmp 6 163 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "calc = 1 then addbmp calc1  ..\\..\\barre\\images\\calc1.bmp 6 246 400 (P:0)"
+          },
+          {
+            "id": 21,
+            "param": "sacados = 1 then addbmp sac  ..\\..\\barre\\images\\sac.bmp 6 384 400 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [322, 415, 369, 449, 3, 0, 100]"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [545, 419, 553, 425, 0, 0, 100]"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [146, 458, 518, 468, 0, 1, 0]"
+          },
+          {
+            "id": 27,
+            "param": "etoile1 ..\\..\\barre\\images\\texteam.bmp 6 0 452 (P:100)"
+          },
+          {
+            "id": 2,
+            "param": "Zone Def: [17, 409, 90, 437, 0, 6, 0]"
+          }
+        ]
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": []
+    }
+  ],
+  "logs": [
+    "================================================================================",
+    "VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)",
+    "================================================================================",
+    "ℹ️ INDEX_ID: 1",
+    "✓ Signature VNFILE @ 0x00000009",
+    "⚠️ Utilise fallback @ 0x00000135",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #1 @ 0x0000014B",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 3 @ 0x00000164: '..\\..\\allem\\img24\\berlin.bmp' (param=16)",
+    "    ℹ️ Suspicious Command ID 4294967291 in Init Script. Stopping to avoid garbage data.",
+    "    ℹ️ Config signature missing. Next scene detected directly.",
+    "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #2 @ 0x000004E9",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Titre @ 0x000004EA: 'inv.dll' (param=106)",
+    "    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.",
+    "    ℹ️ Suspicious Command ID 1835150953 in Init Script. Stopping to avoid garbage data.",
+    "    ℹ️ Config signature missing. Next scene detected directly.",
+    "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #3 @ 0x00004761",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Titre @ 0x00004762: '..\\frontal\\vnoption.dll' (param=2)",
+    "    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.",
+    "    ℹ️ Suspicious Command ID 30 in Init Script. Stopping to avoid garbage data.",
+    "ℹ️ Skipping Config: End of file reached.",
+    "ℹ️ Skipping Hotspots: End of file reached.",
+    "\n⚠️ EOF atteint naturellement",
+    "\n================================================================================",
+    "Parsé 3 scènes",
+    "================================================================================"
+  ]
+}
