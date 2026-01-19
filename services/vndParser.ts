@@ -357,9 +357,16 @@ export class VNDSequentialParser {
       }
     }
 
-    // varOffset now points to scene start
-    this.offset = varOffset;
-    this.log(`✓ Début des scènes @ 0x${this.offset.toString(16).toUpperCase().padStart(8, '0')}`);
+    // varOffset now points to first byte after padding
+    // But getValidFileCountInScene() expects to start at the 0x00 separator byte BEFORE the slot
+    // So we need to backtrack 1 byte to point to that separator
+    if (varOffset > 0 && this.data.getUint8(varOffset - 1) === 0x00) {
+      this.offset = varOffset - 1;
+      this.log(`✓ Début des scènes @ 0x${this.offset.toString(16).toUpperCase().padStart(8, '0')} (0x00 separator before slot)`);
+    } else {
+      this.offset = varOffset;
+      this.log(`✓ Début des scènes @ 0x${this.offset.toString(16).toUpperCase().padStart(8, '0')}`);
+    }
   }
 
   // Heuristic to check if a buffer looks like a valid filename string
@@ -442,6 +449,12 @@ export class VNDSequentialParser {
   private parseSceneFiles(sceneNum: number): SceneFile[] {
     const files: SceneFile[] = [];
     const configSig = [0xDB, 0xFF, 0xFF, 0xFF];
+
+    // Read the scene slot/ID (u32) before files
+    if (this.offset + 4 <= this.data.byteLength) {
+      const sceneSlot = this.readU32();
+      this.log(`    Scene slot/ID: ${sceneSlot}`);
+    }
 
     for (let slot = 1; slot <= 8; slot++) {
       if (this.offset + 4 > this.data.byteLength) break;
@@ -800,50 +813,31 @@ export class VNDSequentialParser {
             break;
         }
 
-        // --- DEEP SMART SEEK with GREEDY LOOKAHEAD ---
-        let seekCount = 0;
-        const maxSeek = 20000; 
-        let foundStart = false;
-        let bestOffset = -1;
-        let bestFileCount = -1;
+        // skipHeader() now points directly to the 0x00 separator before the first scene
+        // No need for DEEP SMART SEEK anymore!
 
-        while (seekCount < maxSeek && this.offset < this.data.byteLength) {
-            const count = this.getValidFileCountInScene(this.offset);
-            
-            if (count > 0) {
-                // Found a potential start.
-                bestOffset = this.offset;
-                bestFileCount = count;
-                
-                // Greedy Optimization
-                let shift = 8;
-                let lookAheadLimit = 32; 
-                
-                while (shift <= lookAheadLimit) {
-                    const nextOffset = this.offset + shift;
-                    const nextCount = this.getValidFileCountInScene(nextOffset);
-                    if (nextCount > bestFileCount) {
-                        this.log(`    ℹ️ Optimization: Shifted start by ${shift} bytes. Files: ${bestFileCount} -> ${nextCount}`);
-                        bestOffset = nextOffset;
-                        bestFileCount = nextCount;
-                    }
-                    shift += 8;
-                }
-                
-                this.offset = bestOffset;
-                foundStart = true;
+        // Check if we're at a scene separator (0x00)
+        if (this.data.getUint8(this.offset) !== 0x00) {
+          // Try to find next scene separator within next 20000 bytes
+          let found = false;
+          for (let i = 1; i < 20000 && this.offset + i < this.data.byteLength; i++) {
+            if (this.data.getUint8(this.offset + i) === 0x00) {
+              // Verify it looks like a scene start by checking if valid file count follows
+              if (this.getValidFileCountInScene(this.offset + i) > 0) {
+                this.offset += i;
+                found = true;
                 break;
+              }
             }
-            this.offset++;
-            seekCount++;
-        }
+          }
 
-        if (!foundStart) {
-            this.log(`\n❌ Impossible de trouver un début de scène valide après ${seekCount} octets.`);
+          if (!found) {
+            this.log(`\n❌ Impossible de trouver un début de scène valide`);
             break;
+          }
         }
 
-        const sep = this.readU8(); 
+        const sep = this.readU8(); // Read the 0x00 separator
         const sceneOffset = this.offset; 
         this.log(`\n${'═'.repeat(80)}`);
         this.log(`SCÈNE #${sceneNum} @ 0x${(sceneOffset - 1).toString(16).toUpperCase().padStart(8, '0')}`);
