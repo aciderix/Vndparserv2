@@ -264,27 +264,102 @@ export class VNDSequentialParser {
 
     this.log(`✓ Signature VNFILE @ 0x${vnfilePos.toString(16).toUpperCase().padStart(8, '0')}`);
 
-    const musicWavSig = new TextEncoder().encode('music.wav');
-    const musicPos = this.findSequence(musicWavSig);
+    // Parse variable table - Standard offset is 0x86
+    // After: [Version][Engine][Publisher][Dimensions][INDEX_ID][Path]
+    let varOffset = 0x86;
+    if (varOffset >= this.data.byteLength) {
+      this.log("⚠️ Offset variables invalide");
+      this.offset = vnfilePos + 300;
+      return;
+    }
 
-    if (musicPos !== -1) {
-      const potentialLengthPos = musicPos - 4;
-      if (potentialLengthPos >= 0) {
-        const length = this.data.getUint32(potentialLengthPos, true);
-        if (length === 9) { 
-          // Structure: [Separator 1b] [Slot 1 (8b)] [Slot 2 (Len+String+Param)]
-          // We are at Slot 2 Len.
-          // Backtrack 8 bytes (Slot 1) + 1 byte (Separator) = 9 bytes.
-          const sceneStart = potentialLengthPos - 9;
-          this.log(`✓ Début estimé des scènes @ 0x${sceneStart.toString(16).toUpperCase().padStart(8, '0')}`);
-          this.offset = sceneStart;
-          return;
+    // Read variable table size
+    const varTableSize = this.data.getUint32(varOffset, true);
+    varOffset += 4;
+    const varTableStart = varOffset;
+
+    this.log(`✓ Table des variables @ 0x${varTableStart.toString(16).toUpperCase().padStart(8, '0')} (taille: ${varTableSize} bytes)`);
+
+    // Parse variables: [Length u32][Name string][Value u32] repeated
+    let varCount = 0;
+    while (varOffset < this.data.byteLength && varCount < 500) {
+      // Check for 8-byte padding (end of variables marker)
+      let isPadding = true;
+      for (let i = 0; i < 8; i++) {
+        if (varOffset + i >= this.data.byteLength || this.data.getUint8(varOffset + i) !== 0x00) {
+          isPadding = false;
+          break;
         }
+      }
+
+      if (isPadding) {
+        this.log(`✓ Fin des variables @ 0x${varOffset.toString(16).toUpperCase().padStart(8, '0')} (${varCount} variables parsées)`);
+        varOffset += 8; // Skip the 8-byte padding
+        break;
+      }
+
+      // Read variable
+      const nameLength = this.data.getUint32(varOffset, true);
+
+      // Invalid length indicates end of variables
+      if (nameLength === 0 || nameLength > 100) {
+        this.log(`✓ Fin des variables @ 0x${varOffset.toString(16).toUpperCase().padStart(8, '0')} (${varCount} variables)`);
+        break;
+      }
+
+      varOffset += 4;
+
+      // Read name
+      if (varOffset + nameLength > this.data.byteLength) break;
+      varOffset += nameLength;
+
+      // Read value
+      if (varOffset + 4 > this.data.byteLength) break;
+      varOffset += 4;
+
+      varCount++;
+    }
+
+    // Now skip ALL padding after variables
+    const paddingStart = varOffset;
+    while (varOffset < this.data.byteLength && this.data.getUint8(varOffset) === 0x00) {
+      varOffset++;
+      // Safety check: don't skip more than 256 bytes of padding
+      if (varOffset - paddingStart > 256) break;
+    }
+
+    const paddingBytes = varOffset - paddingStart;
+    if (paddingBytes > 0) {
+      this.log(`✓ Padding après variables: ${paddingBytes} bytes`);
+    }
+
+    // Check for separator 01 00 00 00 (Pattern A)
+    if (varOffset + 4 <= this.data.byteLength) {
+      const separator = this.data.getUint32(varOffset, true);
+
+      if (separator === 0x00000001) {
+        this.log(`✓ Séparateur 01 00 00 00 trouvé @ 0x${varOffset.toString(16).toUpperCase().padStart(8, '0')}`);
+        varOffset += 4; // Skip separator
+
+        // Skip padding after separator
+        const postSepPadding = varOffset;
+        while (varOffset < this.data.byteLength && this.data.getUint8(varOffset) === 0x00) {
+          varOffset++;
+          if (varOffset - postSepPadding > 256) break;
+        }
+
+        const postSepBytes = varOffset - postSepPadding;
+        if (postSepBytes > 0) {
+          this.log(`✓ Padding après séparateur: ${postSepBytes} bytes`);
+        }
+      } else {
+        this.log(`✓ Pas de séparateur (Pattern B)`);
       }
     }
 
-    this.offset = vnfilePos + 300;
-    this.log(`⚠️ Utilise fallback @ 0x${this.offset.toString(16).toUpperCase().padStart(8, '0')}`);
+    // varOffset now points to scene start
+    this.offset = varOffset;
+    this.log(`✓ Début des scènes @ 0x${this.offset.toString(16).toUpperCase().padStart(8, '0')}`);
   }
 
   // Heuristic to check if a buffer looks like a valid filename string
