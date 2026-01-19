@@ -383,6 +383,11 @@ export class VNDSequentialParser {
     if (this.data.getUint8(offset) !== 0) return -1;
 
     let currentOffset = offset + 1; // Start of scene data (after 0x00 separator)
+
+    // Skip Scene Slot/ID (u32) - parseSceneFiles() will read it later
+    if (currentOffset + 4 > this.data.byteLength) return -1;
+    currentOffset += 4;
+
     let validFileCount = 0;
     let hasExtensionCount = 0;
 
