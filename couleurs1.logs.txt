@@ -14,41 +14,6 @@ SCÈNE #1 @ 0x00001163
 
   [HOTSPOTS] (6 items)
 
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #2 @ 0x00001A4D
-════════════════════════════════════════════════════════════════════════════════
-    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1A56. Backtracking.
-    Fichier 5 @ 0x00001A76: 'euroland\bureaubanquier.bmp' (param=16)
-
-  [HOTSPOTS] (6 items)
-
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #3 @ 0x00001E3D
-════════════════════════════════════════════════════════════════════════════════
-    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1E46. Backtracking.
-    Fichier 3 @ 0x00001E56: 'music.wav' (param=6)
-    Fichier 5 @ 0x00001E6F: 'euroland\banque.bmp' (param=16)
-
-  [HOTSPOTS] (5 items)
-
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #4 @ 0x00002441
-════════════════════════════════════════════════════════════════════════════════
-    Fichier 1 @ 0x0000244A: 'music.wav' (param=6)
-    Fichier 3 @ 0x00002463: 'euroland\biblio.bmp' (param=16)
-    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
-
-  [HOTSPOTS] (26 items)
-
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #5 @ 0x00003B1A
-════════════════════════════════════════════════════════════════════════════════
-    Fichier 1 @ 0x00003B23: 'music.wav' (param=6)
-    Fichier 3 @ 0x00003B3C: 'euroland\maison.bmp' (param=16)
-    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
-
-  [HOTSPOTS] (11 items)
-
 ================================================================================
-Parsé 5 scènes
+Parsé 1 scènes
 ================================================================================

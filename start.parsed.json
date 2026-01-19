@@ -496,7 +496,6 @@
     "    ℹ️ Detected Hotspot structure at 0x138B inside script area. Stopping script parsing.",
     "    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.",
     "\n  [HOTSPOTS] (5 items)",
-    "\n❌ Impossible de trouver un début de scène valide après 258 octets.",
     "\n================================================================================",
     "Parsé 1 scènes",
     "================================================================================"

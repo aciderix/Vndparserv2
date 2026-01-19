@@ -13,26 +13,6 @@ SCÈNE #1 @ 0x0000014B
     ℹ️ Config signature missing. Next scene detected directly.
     ℹ️ Skipping Hotspots: Next scene detected immediately.
 
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #2 @ 0x000004E9
-════════════════════════════════════════════════════════════════════════════════
-    Titre @ 0x000004EA: 'inv.dll' (param=106)
-    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.
-    ℹ️ Suspicious Command ID 1835150953 in Init Script. Stopping to avoid garbage data.
-    ℹ️ Config signature missing. Next scene detected directly.
-    ℹ️ Skipping Hotspots: Next scene detected immediately.
-
-════════════════════════════════════════════════════════════════════════════════
-SCÈNE #3 @ 0x00004761
-════════════════════════════════════════════════════════════════════════════════
-    Titre @ 0x00004762: '..\frontal\vnoption.dll' (param=2)
-    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.
-    ℹ️ Suspicious Command ID 30 in Init Script. Stopping to avoid garbage data.
-ℹ️ Skipping Config: End of file reached.
-ℹ️ Skipping Hotspots: End of file reached.
-
-⚠️ EOF atteint naturellement
-
 ================================================================================
-Parsé 3 scènes
+Parsé 1 scènes
 ================================================================================

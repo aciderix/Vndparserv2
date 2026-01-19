@@ -1,19 +1,18 @@
 ================================================================================
 VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)
 ================================================================================
-ℹ️ INDEX_ID: 1548046913
+ℹ️ INDEX_ID: 1
 ✓ Signature VNFILE @ 0x00000009
 ⚠️ Utilise fallback @ 0x00000135
 
 ════════════════════════════════════════════════════════════════════════════════
-SCÈNE #1 @ 0x00001312
+SCÈNE #1 @ 0x00001159
 ════════════════════════════════════════════════════════════════════════════════
-    Fichier 1 @ 0x0000131B: 'Frontal' (param=0)
-    Fichier 7 @ 0x00001352: 'interface.bmp' (param=0)
-    ℹ️ Detected Hotspot structure at 0x138B inside script area. Stopping script parsing.
-    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.
-
-  [HOTSPOTS] (5 items)
+    Fichier 1 @ 0x00001162: 'vent.wav' (param=2)
+    Fichier 3 @ 0x0000117A: 'scooter1.bmp' (param=16)
+    ℹ️ Suspicious Command ID 4294967278 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
 
 ================================================================================
 Parsé 1 scènes

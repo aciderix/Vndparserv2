@@ -10,19 +10,46 @@
   "scenes": [
     {
       "id": 1,
-      "offset": 332,
+      "offset": 4393,
       "files": [
         {
-          "slot": 4,
-          "filename": "..\\..\\allem\\img24\\berlin.bmp",
-          "param": 16,
-          "offset": 356
+          "slot": 1,
+          "filename": "PUNK",
+          "param": 0,
+          "offset": 4393
+        },
+        {
+          "slot": 2,
+          "filename": "LAPIN",
+          "param": 0,
+          "offset": 4405
+        },
+        {
+          "slot": 3,
+          "filename": "JEUGAGNE",
+          "param": 0,
+          "offset": 4418
+        },
+        {
+          "slot": 8,
+          "filename": "a_dan.wav",
+          "param": 2,
+          "offset": 4466
         }
       ],
       "initScript": {
         "flag": 0,
-        "count": 0,
-        "commands": []
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
       },
       "config": {
         "flag": 0,
@@ -39,10 +66,14 @@
     "✓ Signature VNFILE @ 0x00000009",
     "⚠️ Utilise fallback @ 0x00000135",
     "\n════════════════════════════════════════════════════════════════════════════════",
-    "SCÈNE #1 @ 0x0000014B",
+    "SCÈNE #1 @ 0x00001128",
     "════════════════════════════════════════════════════════════════════════════════",
-    "    Fichier 3 @ 0x00000164: '..\\..\\allem\\img24\\berlin.bmp' (param=16)",
-    "    ℹ️ Suspicious Command ID 4294967291 in Init Script. Stopping to avoid garbage data.",
+    "    Titre @ 0x00001129: 'PUNK' (param=0)",
+    "    Fichier 1 @ 0x00001135: 'LAPIN' (param=0)",
+    "    Fichier 2 @ 0x00001142: 'JEUGAGNE' (param=0)",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1162. Backtracking.",
+    "    Fichier 7 @ 0x00001172: 'a_dan.wav' (param=2)",
+    "    ℹ️ Command string length 1701867363 overshoots script area. Stopping.",
     "    ℹ️ Config signature missing. Next scene detected directly.",
     "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
     "\n================================================================================",

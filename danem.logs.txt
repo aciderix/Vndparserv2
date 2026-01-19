@@ -1,19 +1,21 @@
 ================================================================================
 VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)
 ================================================================================
-ℹ️ INDEX_ID: 1548046913
+ℹ️ INDEX_ID: 1
 ✓ Signature VNFILE @ 0x00000009
 ⚠️ Utilise fallback @ 0x00000135
 
 ════════════════════════════════════════════════════════════════════════════════
-SCÈNE #1 @ 0x00001312
+SCÈNE #1 @ 0x00001128
 ════════════════════════════════════════════════════════════════════════════════
-    Fichier 1 @ 0x0000131B: 'Frontal' (param=0)
-    Fichier 7 @ 0x00001352: 'interface.bmp' (param=0)
-    ℹ️ Detected Hotspot structure at 0x138B inside script area. Stopping script parsing.
-    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.
-
-  [HOTSPOTS] (5 items)
+    Titre @ 0x00001129: 'PUNK' (param=0)
+    Fichier 1 @ 0x00001135: 'LAPIN' (param=0)
+    Fichier 2 @ 0x00001142: 'JEUGAGNE' (param=0)
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1162. Backtracking.
+    Fichier 7 @ 0x00001172: 'a_dan.wav' (param=2)
+    ℹ️ Command string length 1701867363 overshoots script area. Stopping.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
 
 ================================================================================
 Parsé 1 scènes

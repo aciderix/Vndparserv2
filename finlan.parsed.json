@@ -10,13 +10,19 @@
   "scenes": [
     {
       "id": 1,
-      "offset": 332,
+      "offset": 4442,
       "files": [
         {
+          "slot": 2,
+          "filename": "vent.wav",
+          "param": 2,
+          "offset": 4450
+        },
+        {
           "slot": 4,
-          "filename": "..\\..\\allem\\img24\\berlin.bmp",
+          "filename": "scooter1.bmp",
           "param": 16,
-          "offset": 356
+          "offset": 4474
         }
       ],
       "initScript": {
@@ -39,10 +45,11 @@
     "✓ Signature VNFILE @ 0x00000009",
     "⚠️ Utilise fallback @ 0x00000135",
     "\n════════════════════════════════════════════════════════════════════════════════",
-    "SCÈNE #1 @ 0x0000014B",
+    "SCÈNE #1 @ 0x00001159",
     "════════════════════════════════════════════════════════════════════════════════",
-    "    Fichier 3 @ 0x00000164: '..\\..\\allem\\img24\\berlin.bmp' (param=16)",
-    "    ℹ️ Suspicious Command ID 4294967291 in Init Script. Stopping to avoid garbage data.",
+    "    Fichier 1 @ 0x00001162: 'vent.wav' (param=2)",
+    "    Fichier 3 @ 0x0000117A: 'scooter1.bmp' (param=16)",
+    "    ℹ️ Suspicious Command ID 4294967278 in Init Script. Stopping to avoid garbage data.",
     "    ℹ️ Config signature missing. Next scene detected directly.",
     "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
     "\n================================================================================",
