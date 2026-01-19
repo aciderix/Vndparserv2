@@ -202,17 +202,15 @@ class HeaderDetector {
         console.log(`  ... (showing every 10th variable) ...`);
       }
 
-      // Variables must be aligned to 4-byte boundaries
-      // Structure: [value u32] [length u32] [name bytes] [padding] [terminator u32 = 0]
-      // Align name end to 4-byte boundary
-      this.alignTo4();
-
-      // Read terminator (should always be 0x00000000)
-      const terminator = this.readU32();
-      if (varCount < 5 && terminator !== 0) {
-        console.log(`  WARNING: Terminator = 0x${terminator.toString(16)} (expected 0)`);
+      // Variables structure: [value u32] [length u32] [name bytes] [separator u32 = 0]
+      // IMPORTANT: After name, there's ALWAYS exactly 4 bytes (0x00000000), no padding/alignment!
+      // Just read the separator directly after name
+      const separator = this.readU32();
+      if (varCount < 5 && separator !== 0) {
+        console.log(`  DEBUG: Separator = 0x${separator.toString(16)} (expected 0)`);
       }
 
+      // Now next variable starts immediately!
       varCount++;
     }
 
@@ -271,7 +269,7 @@ class HeaderDetector {
 }
 
 // Test all VND files
-const files = ['couleurs1.vnd', 'barre.vnd', 'start.vnd'];
+const files = ['couleurs1.vnd', 'barre.vnd', 'start.vnd', 'danem.vnd', 'finlan.vnd'];
 
 console.log('═══════════════════════════════════════════════════════════════════');
 console.log('  VND HEADER DETECTION TEST');
