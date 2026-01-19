@@ -49,6 +49,335 @@ SCÈNE #5 @ 0x00003B1A
 
   [HOTSPOTS] (11 items)
 
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #6 @ 0x0000471B
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 1 @ 0x00004724: 'music.wav' (param=6)
+    Fichier 3 @ 0x0000473D: 'euroland\transverteur2.bmp' (param=16)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (8 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #7 @ 0x000051FD
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 1 @ 0x00005206: 'music.wav' (param=6)
+    Fichier 3 @ 0x0000521F: 'euroland\bdmusee.bmp' (param=16)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (8 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #8 @ 0x00005ABD
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x5AC6. Backtracking.
+    Fichier 5 @ 0x00005AE6: 'euroland\armoire3.bmp' (param=16)
+
+  [HOTSPOTS] (5 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #9 @ 0x00006199
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x61A2. Backtracking.
+    Fichier 5 @ 0x000061C2: 'euroland\infosac.bmp' (param=16)
+    Fichier 6 @ 0x000061DE: 'sacados.htm' (param=0)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+    ℹ️ Suspicious Command ID 30 in Init Script. Stopping to avoid garbage data.
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #10 @ 0x00006320
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x6329. Backtracking.
+    Fichier 3 @ 0x00006339: 'music.wav' (param=0)
+    Fichier 5 @ 0x00006352: 'euroland\calc.bmp' (param=16)
+
+  [HOTSPOTS] (2 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #11 @ 0x0000674F
+════════════════════════════════════════════════════════════════════════════════
+    Titre @ 0x00006750: 'Destination' (param=0)
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x676B. Backtracking.
+    Fichier 6 @ 0x0000678B: 'euroland\europe.bmp' (param=16)
+
+  [HOTSPOTS] (17 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #12 @ 0x00007436
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x743F. Backtracking.
+    Fichier 5 @ 0x0000745F: 'euroland\ecran2.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #13 @ 0x00007BFC
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x7C05. Backtracking.
+    Fichier 5 @ 0x00007C25: 'euroland\calc2.bmp' (param=20)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #14 @ 0x00007CEF
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x7CF8. Backtracking.
+    Fichier 5 @ 0x00007D18: 'euroland\calc2.bmp' (param=16)
+    Fichier 6 @ 0x00007D32: 'calc.htm' (param=0)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #15 @ 0x00007E65
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x7E6E. Backtracking.
+    Fichier 3 @ 0x00007E7E: 'music.wav' (param=2)
+    Fichier 5 @ 0x00007E97: 'euroland\tele.bmp' (param=16)
+    Fichier 6 @ 0x00007EB0: 'tele.htm' (param=0)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (1 items)
+    ℹ️ Optimization: Shifted start by 8 bytes. Files: 1 -> 2
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #16 @ 0x000080B2
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x80C3. Backtracking.
+    Fichier 6 @ 0x000080E3: 'euroland\cochon.bmp' (param=16)
+    Fichier 7 @ 0x000080FE: 'coffre.htm' (param=0)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #17 @ 0x00008237
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x8240. Backtracking.
+    Fichier 5 @ 0x00008260: 'euroland\burzom.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #18 @ 0x0000832A
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x8333. Backtracking.
+    Fichier 5 @ 0x00008353: 'euroland\dossier.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #19 @ 0x0000841E
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x8427. Backtracking.
+    Fichier 5 @ 0x00008447: 'euroland\encre2.bmp' (param=16)
+
+  [HOTSPOTS] (2 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #20 @ 0x0000851A
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x8523. Backtracking.
+    Fichier 5 @ 0x00008543: 'euroland\courrier.bmp' (param=16)
+    Fichier 6 @ 0x00008560: 'courrier.htm' (param=0)
+    ℹ️ Slot 8: Filename contains binary control characters. Assuming end of files.
+
+  [HOTSPOTS] (1 items)
+    ℹ️ Optimization: Shifted start by 8 bytes. Files: 1 -> 2
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #21 @ 0x0000878C
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x879D. Backtracking.
+    Fichier 6 @ 0x000087BD: 'euroland\bonus.bmp' (param=16)
+    Fichier 7 @ 0x000087D7: 'bonus1.htm' (param=0)
+    ℹ️ Command string length 100 overshoots script area. Stopping.
+
+  [HOTSPOTS] (3 items)
+    ℹ️ Optimization: Shifted start by 8 bytes. Files: 1 -> 2
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #22 @ 0x000092B2
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x92C3. Backtracking.
+    Fichier 6 @ 0x000092E3: 'euroland\bonus.bmp' (param=16)
+    Fichier 7 @ 0x000092FD: 'bonus1.htm' (param=0)
+    ℹ️ Command string length 100 overshoots script area. Stopping.
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #23 @ 0x00009C55
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x9C5E. Backtracking.
+    Fichier 5 @ 0x00009C7E: 'euroland\bonus.bmp' (param=16)
+    Fichier 6 @ 0x00009C98: 'bonus1.htm' (param=0)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+    ℹ️ Command string length 100 overshoots script area. Stopping.
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #24 @ 0x0000A5F6
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 5 @ 0x0000A61F: '..\..\frontal\img24\fond.bmp' (param=32)
+    ℹ️ Detected Hotspot structure at 0xA667 inside script area. Stopping script parsing.
+    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #25 @ 0x0000A747
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0xA750. Backtracking.
+    Fichier 5 @ 0x0000A770: 'euroland\bonus.bmp' (param=16)
+    Fichier 6 @ 0x0000A78A: 'bonus1.htm' (param=0)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+    ℹ️ Command string length 100 overshoots script area. Stopping.
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #26 @ 0x0000B25F
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0xB268. Backtracking.
+    Fichier 5 @ 0x0000B288: 'euroland\mes_100.bmp' (param=16)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+    ℹ️ Command string length 80 overshoots script area. Stopping.
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #27 @ 0x0000B437
+════════════════════════════════════════════════════════════════════════════════
+    Titre @ 0x0000B438: '..\frontal\vnoption.dll' (param=2)
+    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.
+    ℹ️ Suspicious Command ID 30 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #28 @ 0x0000DC1F
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0xDC30. Backtracking.
+    Fichier 6 @ 0x0000DC50: 'euroland\experience.bmp' (param=16)
+
+  [HOTSPOTS] (6 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #29 @ 0x0000E566
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0xE56F. Backtracking.
+    Fichier 3 @ 0x0000E57F: 'bruit\foret.wav' (param=6)
+    Fichier 5 @ 0x0000E59E: 'euroland\fontain2.bmp' (param=16)
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #30 @ 0x0000E907
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0xE910. Backtracking.
+    Fichier 3 @ 0x0000E920: 'bruit\foret.wav' (param=6)
+    Fichier 5 @ 0x0000E93F: 'euroland\fiole2.bmp' (param=16)
+
+  [HOTSPOTS] (17 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #31 @ 0x00011542
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1155B. Backtracking.
+    Fichier 7 @ 0x0001157B: '..\..\ecosse\img24\interc.bmp' (param=16)
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #32 @ 0x00011B24
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 6 @ 0x00011B55: 'euroland\papier.bmp' (param=0)
+    ℹ️ Detected Hotspot structure at 0x11B94 inside script area. Stopping script parsing.
+    ℹ️ Config signature missing, but Hotspots detected. Scene sans config.
+
+  [HOTSPOTS] (5 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #33 @ 0x00011EBE
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 5 @ 0x00011EE7: 'credit.bmp' (param=0)
+    Fichier 6 @ 0x00011EF9: 'credit.htm' (param=1)
+    ℹ️ Slot 8: Filename contains binary control characters. Assuming end of files.
+    ℹ️ Suspicious Command ID 855638016 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #34 @ 0x00011FD3
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x11FE4. Backtracking.
+    Fichier 6 @ 0x00012004: 'euroland\euro1.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #35 @ 0x00012116
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1211F. Backtracking.
+    Fichier 5 @ 0x0001213F: 'euroland\euro2.bmp' (param=16)
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #36 @ 0x000122B1
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x122BA. Backtracking.
+    Fichier 5 @ 0x000122DA: 'euroland\mess2.bmp' (param=16)
+
+  [HOTSPOTS] (0 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #37 @ 0x00012337
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x12340. Backtracking.
+    Fichier 5 @ 0x00012360: 'euroland\table_m.bmp' (param=16)
+
+  [HOTSPOTS] (3 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #38 @ 0x00012600
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x12609. Backtracking.
+    Fichier 5 @ 0x00012629: 'euroland\mess2.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #39 @ 0x00012703
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1270C. Backtracking.
+    Fichier 5 @ 0x0001272C: 'euroland\mes_porta.bmp' (param=16)
+
+  [HOTSPOTS] (1 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #40 @ 0x0001284C
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 2 @ 0x0001285D: 'perdu.avi' (param=1)
+    Fichier 6 @ 0x00012886: 'perdu.htm' (param=0)
+    ℹ️ Slot 8: Filename contains binary control characters. Assuming end of files.
+    ℹ️ Command string length 145 overshoots script area. Stopping.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #41 @ 0x000128D0
+════════════════════════════════════════════════════════════════════════════════
+    Titre @ 0x000128D1: 'perdu.wav' (param=3)
+    ℹ️ Slot 2: Filename contains binary control characters. Assuming end of files.
+ℹ️ Skipping Config: End of file reached.
+ℹ️ Skipping Hotspots: End of file reached.
+
+⚠️ EOF atteint naturellement
+
 ================================================================================
-Parsé 5 scènes
+Parsé 41 scènes
 ================================================================================
