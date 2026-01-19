@@ -221,53 +221,34 @@ class HeaderDetector {
     info.variablesEnd = this.offset;
     console.log(`\n✓ Parsed ${varCount} variables, ended at 0x${info.variablesEnd.toString(16)}`);
 
-    // 8. Skip padding after variables
-    console.log(`\n🔍 Skipping padding after variables...`);
-    const beforePadding = this.offset;
-    this.skipPadding();
-    const paddingBytes = this.offset - beforePadding;
-    console.log(`  Skipped ${paddingBytes} bytes of padding (0x${beforePadding.toString(16)} -> 0x${this.offset.toString(16)})`);
+    // 8. Skip any additional padding after the 8-byte marker
+    console.log(`\n🔍 Searching for scene separator (01 00 00 00)...`);
+    const beforeSearch = this.offset;
 
-    // 9. Find first valid scene by looking for command patterns
-    console.log(`\n🎯 Searching for scene start...`);
+    // Search for the scene separator 01 00 00 00 within next 256 bytes
+    let separatorFound = false;
+    const searchLimit = Math.min(this.offset + 0x100, this.data.byteLength - 4);
 
-    let sceneFound = false;
-    const searchLimit = Math.min(this.offset + 0x500, this.data.byteLength);
+    for (let i = this.offset; i < searchLimit; i++) {
+      const marker = this.data.getUint32(i, true);
+      if (marker === 0x00000001) {  // 01 00 00 00 in little endian
+        console.log(`✓ Found scene separator at 0x${i.toString(16)}`);
+        console.log(`  Distance from variables end: ${i - beforeSearch} bytes`);
+        this.offset = i + 4; // Skip the separator itself
+        info.sceneStart = this.offset;
+        separatorFound = true;
 
-    for (let i = this.offset; i < searchLimit; i += 4) {
-      this.offset = i;
-
-      // Try to read what looks like a command
-      const id = this.readU32();
-      const subtype = this.readU32();
-      const paramLengthOffset = this.offset;
-      const paramLength = this.readU32();
-
-      // Validate: ID should be small, paramLength reasonable
-      if (id < 100 && paramLength > 5 && paramLength < 500) {
-        const paramBytes = this.readBytes(paramLength);
-        const decoder = new TextDecoder('windows-1252');
-        const param = decoder.decode(paramBytes);
-
-        // Check if param looks like valid VND command
-        if (param.includes('toolbar') ||
-            param.includes('bmp') ||
-            param.includes('then') ||
-            param.includes('addbmp') ||
-            param.includes('Comic sans')) {
-          info.sceneStart = i;
-          sceneFound = true;
-          console.log(`✓ Scene start detected at 0x${i.toString(16)}`);
-          console.log(`  First command: ID=${id}, subtype=${subtype}, param="${param.substring(0, 50)}..."`);
-          break;
-        }
+        // Show what comes after the separator
+        const peekOffset = this.offset;
+        const peek1 = this.data.getUint32(peekOffset, true);
+        const peek2 = this.data.getUint32(peekOffset + 4, true);
+        console.log(`  Next bytes: 0x${peek1.toString(16)} 0x${peek2.toString(16)}`);
+        break;
       }
-
-      this.offset = i; // Reset for next iteration
     }
 
-    if (!sceneFound) {
-      console.log(`✗ No valid scene start found in search range`);
+    if (!separatorFound) {
+      console.log(`✗ Scene separator not found in search range`);
       info.sceneStart = this.offset;
     }
 
