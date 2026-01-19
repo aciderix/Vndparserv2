@@ -19,6 +19,24 @@ SCÈNE #1 @ 0x00001167
 
   [HOTSPOTS] (6 items)
 
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #2 @ 0x00001A51
+════════════════════════════════════════════════════════════════════════════════
+    Scene slot/ID: 0
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1A56. Backtracking.
+    Fichier 4 @ 0x00001A76: 'euroland\bureaubanquier.bmp' (param=16)
+
+  [HOTSPOTS] (6 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #3 @ 0x00001E36
+════════════════════════════════════════════════════════════════════════════════
+    Scene slot/ID: 0
+    ℹ️ Slot 2: Length 16777216 too large. Stopping file parsing.
+    ℹ️ Suspicious Command ID 16777216 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
 ================================================================================
-Parsé 1 scènes
+Parsé 3 scènes
 ================================================================================
