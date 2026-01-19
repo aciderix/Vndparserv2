@@ -143,57 +143,70 @@ class HeaderDetector {
     }
 
     // 7. Parse variables
-    // Variables start right after the .dll path (no count field!)
-    info.variablesStart = this.offset;
-    console.log(`\n📦 Parsing variables from 0x${info.variablesStart.toString(16)}...`);
+    // CORRECT STRUCTURE from user analysis:
+    // [Total size u32] then for each var: [Length u32][Name char*][Value u32]
+    // After all variables: 8 bytes padding (00 00 00 00 00 00 00 00)
 
+    info.variablesStart = this.offset;
+
+    // Read total size field (meaning unclear - might be first section size?)
+    const sizeField = this.readU32();
+    console.log(`\n📦 Parsing variables from 0x${info.variablesStart.toString(16)}...`);
+    console.log(`  Size field: ${sizeField} bytes (0x${sizeField.toString(16)})`);
+
+    // Parse until we hit 8 bytes of padding
     let varCount = 0;
-    while (this.offset < this.data.byteLength && varCount < 200) {
+    while (this.offset < this.data.byteLength && varCount < 500) {
       const varOffset = this.offset;
 
-      // Check if we hit padding/end marker
-      const peekValue = this.data.getUint32(this.offset, true);
-      if (varCount < 5) {
-        console.log(`  DEBUG: offset=0x${this.offset.toString(16)}, peek_value=0x${peekValue.toString(16)}`);
+      // Check for 8-byte padding (end of variables marker)
+      if (this.offset + 8 <= this.data.byteLength) {
+        let isPadding = true;
+        for (let i = 0; i < 8; i++) {
+          if (this.data.getUint8(this.offset + i) !== 0x00) {
+            isPadding = false;
+            break;
+          }
+        }
+        if (isPadding) {
+          console.log(`\n✓ Found 8-byte padding at 0x${varOffset.toString(16)} (end of variables)`);
+          this.offset += 8; // Skip the padding
+          break;
+        }
       }
 
-      if (peekValue === 0 || this.offset + 8 >= this.data.byteLength) {
-        info.variablesEnd = varOffset;
-        console.log(`\n✓ Found end of variables (padding/eof) at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
-        break;
-      }
-
-      const value = this.readU32();
+      // Read length of variable name (includes null terminator)
       const nameLength = this.readU32();
 
-      // Check if this looks like end of variables
       if (nameLength === 0 || nameLength > 100) {
-        this.offset = varOffset; // Rewind
-        info.variablesEnd = varOffset;
-        console.log(`\n✓ Found end of variables at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
+        console.log(`\n✓ End of variables at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
+        this.offset = varOffset;
         break;
       }
 
-      // Read name bytes
+      // Read name bytes (including null terminator)
       if (this.offset + nameLength > this.data.byteLength) {
+        console.log(`\n✗ Variable name would overflow file at 0x${varOffset.toString(16)}`);
         this.offset = varOffset;
-        info.variablesEnd = varOffset;
-        console.log(`\n✓ Variable name would overflow file at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
         break;
       }
 
       const nameBytes = this.readBytes(nameLength);
       const decoder = new TextDecoder('windows-1252');
-      const name = decoder.decode(nameBytes);
+      let name = decoder.decode(nameBytes);
+      // Remove null terminator if present
+      name = name.replace(/\0/g, '');
 
-      // Check if name contains only valid characters (alphanumeric + underscore)
+      // Check if name is valid
       const validNamePattern = /^[A-Za-z0-9_]+$/;
       if (!validNamePattern.test(name)) {
-        this.offset = varOffset; // Rewind
-        info.variablesEnd = varOffset;
-        console.log(`\n✓ Invalid variable name "${name}" detected at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
+        console.log(`\n✓ Invalid variable name at 0x${varOffset.toString(16)} (parsed ${varCount} vars)`);
+        this.offset = varOffset;
         break;
       }
+
+      // Read initial value
+      const value = this.readU32();
 
       info.variables.push({ name, value, offset: varOffset });
       if (varCount < 10 || varCount % 10 === 0) {
@@ -202,17 +215,11 @@ class HeaderDetector {
         console.log(`  ... (showing every 10th variable) ...`);
       }
 
-      // Variables structure: [value u32] [length u32] [name bytes] [separator u32 = 0]
-      // IMPORTANT: After name, there's ALWAYS exactly 4 bytes (0x00000000), no padding/alignment!
-      // Just read the separator directly after name
-      const separator = this.readU32();
-      if (varCount < 5 && separator !== 0) {
-        console.log(`  DEBUG: Separator = 0x${separator.toString(16)} (expected 0)`);
-      }
-
-      // Now next variable starts immediately!
       varCount++;
     }
+
+    info.variablesEnd = this.offset;
+    console.log(`\n✓ Parsed ${varCount} variables, ended at 0x${info.variablesEnd.toString(16)}`);
 
     // 8. Skip padding after variables
     console.log(`\n🔍 Skipping padding after variables...`);
