@@ -37,6 +37,35 @@ SCÈNE #3 @ 0x00001E36
     ℹ️ Config signature missing. Next scene detected directly.
     ℹ️ Skipping Hotspots: Next scene detected immediately.
 
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #4 @ 0x00001E49
+════════════════════════════════════════════════════════════════════════════════
+    Scene slot/ID: 0
+    Fichier 1 @ 0x00001E56: 'music.wav' (param=6)
+    Fichier 3 @ 0x00001E6F: 'euroland\banque.bmp' (param=16)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (5 items)
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #5 @ 0x0000242A
+════════════════════════════════════════════════════════════════════════════════
+    Scene slot/ID: 0
+    ℹ️ Slot 2: Length 2164260864 too large. Stopping file parsing.
+    ℹ️ Suspicious Command ID 2164260864 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #6 @ 0x0000243D
+════════════════════════════════════════════════════════════════════════════════
+    Scene slot/ID: 0
+    Fichier 1 @ 0x0000244A: 'music.wav' (param=6)
+    Fichier 3 @ 0x00002463: 'euroland\biblio.bmp' (param=16)
+    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.
+
+  [HOTSPOTS] (26 items)
+
 ================================================================================
-Parsé 3 scènes
+Parsé 6 scènes
 ================================================================================

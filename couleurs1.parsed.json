@@ -1452,6 +1452,2682 @@
         "ints": []
       },
       "hotspots": []
+    },
+    {
+      "id": 4,
+      "offset": 7754,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 7766
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\banque.bmp",
+          "param": 16,
+          "offset": 7791
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "22 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "22",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "90 350 600 365 0 SORTIE",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Script Logique",
+                  "description": "Logique conditionnelle (if/then/else)"
+                },
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../couleurs1/couleurs1.vnp",
+                  "targetScene": 54,
+                  "condition": "score < 0"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 370
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\banq2.avi 1 168 122 344 374",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Media Cmd (Vidéo)",
+                  "description": "Lecture de fichier AVI"
+                },
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/banq2.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 16,
+              "param": "500"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq41.avi 1 168 122 344 374",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/banq41.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "music.wav",
+                  "args": [
+                    "2"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "160 350 125 365 0 Le banquier d'Euroland",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 184,
+                "y": 340
+              },
+              {
+                "x": 194,
+                "y": 215
+              },
+              {
+                "x": 206,
+                "y": 181
+              },
+              {
+                "x": 177,
+                "y": 158
+              },
+              {
+                "x": 213,
+                "y": 123
+              },
+              {
+                "x": 312,
+                "y": 132
+              },
+              {
+                "x": 332,
+                "y": 171
+              },
+              {
+                "x": 308,
+                "y": 194
+              },
+              {
+                "x": 321,
+                "y": 291
+              },
+              {
+                "x": 317,
+                "y": 340
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq3.avi 1 168 122 344 374",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/banq3.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then rundll roue.dll"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "milleeuro >= 1 then addbmp coffre euroland\\rollover\\coffre.bmp 0 0 203 else delbmp coffre",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Opération Variable",
+                  "description": "Manipulation de variable (set, inc, dec)"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "5 365 125 400 0 Un coffre fort",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 205
+              },
+              {
+                "x": 90,
+                "y": 360
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playwav bruit\\boing.wav 1",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "bruit/boing.wav",
+                  "args": [
+                    "1"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 0 then set_var bonus3 1",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "variable_op",
+                  "action": "set_var",
+                  "file": "bonus3",
+                  "value": 1
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 1 then scene 35"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playtext 310 75 125 365 0 Question Bonus"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 2 then playtext 310 75 125 365 0 tu as déjà répondu"
+            }
+          ],
+          "geometry": {
+            "cursorId": 107,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 451,
+                "y": 17
+              },
+              {
+                "x": 552,
+                "y": 10
+              },
+              {
+                "x": 556,
+                "y": 133
+              },
+              {
+                "x": 450,
+                "y": 138
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "2",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 330 639 365 0 Le bureau du banquier",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 330,
+                "y": 220
+              },
+              {
+                "x": 610,
+                "y": 270
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "offset": 9259,
+      "files": [],
+      "initScript": {
+        "flag": 0,
+        "count": 0,
+        "commands": []
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": []
+    },
+    {
+      "id": 6,
+      "offset": 9278,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 9290
+        },
+        {
+          "slot": 4,
+          "filename": "euroland\\biblio.bmp",
+          "param": 16,
+          "offset": 9315
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 3,
+              "param": ""
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "24 1 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "24",
+                    "1",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "220 350 125 365 0 SORTIE",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Script Logique",
+                  "description": "Logique conditionnelle (if/then/else)"
+                },
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../couleurs1/couleurs1.vnp",
+                  "targetScene": 54,
+                  "condition": "score < 0"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 102,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 149,
+                "y": 286
+              },
+              {
+                "x": 143,
+                "y": 125
+              },
+              {
+                "x": 271,
+                "y": 63
+              },
+              {
+                "x": 342,
+                "y": 96
+              },
+              {
+                "x": 346,
+                "y": 284
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 2,
+              "subtype": 22,
+              "param": "jeu 0",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Set Variable",
+                  "description": "Définit une variable"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 4",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../biblio/biblio.vnp",
+                  "targetScene": 4,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 210 125 365 0 Le livre des",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 225 125 365 0  recettes d'Europe",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 380,
+                "y": 132
+              },
+              {
+                "x": 467,
+                "y": 191
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "850 360 125 365 0 La bibliothécaire d'Euroland",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "telephone = 1 then addbmp tt euroland\\rollover\\maintel.bmp 0 732 240",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Opération Variable",
+                  "description": "Manipulation de variable (set, inc, dec)"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then closewav"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then playavi euroland\\biblio1.avi 1 754 217 873 325",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/biblio1.avi",
+                  "args": [
+                    "1",
+                    "754",
+                    "217",
+                    "873",
+                    "325"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "telephone = 0 then scene 16"
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 752,
+                "y": 190
+              },
+              {
+                "x": 876,
+                "y": 387
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1030 290 125 365 0 Une lampe de bureau",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 100,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 989,
+                "y": 262
+              },
+              {
+                "x": 1018,
+                "y": 213
+              },
+              {
+                "x": 1057,
+                "y": 212
+              },
+              {
+                "x": 1112,
+                "y": 290
+              },
+              {
+                "x": 1061,
+                "y": 294
+              },
+              {
+                "x": 1060,
+                "y": 265
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 2",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../biblio/biblio.vnp",
+                  "targetScene": 2,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1385 212 125 365 0 Le petit atlas",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1385 232 125 365 0 d'Europe.",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1365,
+                "y": 126
+              },
+              {
+                "x": 1559,
+                "y": 188
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp 10",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../biblio/biblio.vnp",
+                  "targetScene": 10,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1120 142 125 365 0 Les Hymnes",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1120 162 125 365 0  nationaux",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1079,
+                "y": 99
+              },
+              {
+                "x": 1198,
+                "y": 67
+              },
+              {
+                "x": 1200,
+                "y": 122
+              },
+              {
+                "x": 1083,
+                "y": 140
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 6,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\italie\\italie.vnp  27",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../italie/italie.vnp",
+                  "targetScene": 27,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "355 22 125 365 0 Léonard",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "355 42 125 365 0 de Vinci",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 381,
+                "y": 68
+              },
+              {
+                "x": 481,
+                "y": 126
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 7,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\biblio\\biblio.vnp  11",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../biblio/biblio.vnp",
+                  "targetScene": 11,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "375 362 125 365 0 L'euro et nous",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 377,
+                "y": 269
+              },
+              {
+                "x": 474,
+                "y": 329
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 8,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "700 12 125 365 0 Big",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "700 32 125 365 0 Ben",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 59",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../angl/angleterre.vnp",
+                  "targetScene": 59,
+                  "condition": "jeu = 1"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 710,
+                "y": 62
+              },
+              {
+                "x": 782,
+                "y": 136
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 9,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 10",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../allem/allem.vnp",
+                  "targetScene": 10,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1740 2 125 365 0 Le mur de",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1740 22 125 365 0  Berlin",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 1768,
+                "y": 178
+              },
+              {
+                "x": 1769,
+                "y": 81
+              },
+              {
+                "x": 1807,
+                "y": 46
+              },
+              {
+                "x": 1874,
+                "y": 42
+              },
+              {
+                "x": 1878,
+                "y": 148
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 10,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1350 332 125 365 0 les corsaires",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 27",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../france/france.vnp",
+                  "targetScene": 27,
+                  "condition": "jeu = 1"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1359,
+                "y": 276
+              },
+              {
+                "x": 1454,
+                "y": 338
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 11,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\grece\\grece.vnp 13",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../grece/grece.vnp",
+                  "targetScene": 13,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1440 22 125 365 0 Les jeux",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1440 42 125 365 0  Olympiques",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1408,
+                "y": 112
+              },
+              {
+                "x": 1444,
+                "y": 51
+              },
+              {
+                "x": 1537,
+                "y": 54
+              },
+              {
+                "x": 1508,
+                "y": 114
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 12,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\ecosse\\ecosse.vnp 36",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../ecosse/ecosse.vnp",
+                  "targetScene": 36,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1100 100 125 365 0 La cornemuse",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1104,
+                "y": 148
+              },
+              {
+                "x": 1200,
+                "y": 131
+              },
+              {
+                "x": 1201,
+                "y": 193
+              },
+              {
+                "x": 1102,
+                "y": 196
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 13,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 1",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../angl/angleterre.vnp",
+                  "targetScene": 1,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 330 125 365 0 Les joyaux de",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 345 125 365 0 la couronne",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "410 360 125 365 0 d'Angleterre",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 379,
+                "y": 200
+              },
+              {
+                "x": 462,
+                "y": 260
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 14,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 17",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../france/france.vnp",
+                  "targetScene": 17,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "900 182 125 365 0 La tour Eiffel",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 892,
+                "y": 154
+              },
+              {
+                "x": 991,
+                "y": 201
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 15,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 11",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../portu/portu.vnp",
+                  "targetScene": 11,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1600 62 125 365 0 L'exposition",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1600 82 125 365 0 universelle",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1580,
+                "y": 125
+              },
+              {
+                "x": 1743,
+                "y": 99
+              },
+              {
+                "x": 1742,
+                "y": 176
+              },
+              {
+                "x": 1581,
+                "y": 188
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 16,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 6",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../allem/allem.vnp",
+                  "targetScene": 6,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 322 125 365 0 Un livre sur",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 342 125 365 0 la fabrication",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "120 362 125 365 0 de la bière",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 5,
+            "points": [
+              {
+                "x": 31,
+                "y": 260
+              },
+              {
+                "x": 21,
+                "y": 246
+              },
+              {
+                "x": 29,
+                "y": 227
+              },
+              {
+                "x": 77,
+                "y": 228
+              },
+              {
+                "x": 75,
+                "y": 257
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 17,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\belge\\belge.vnp 23",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../belge/belge.vnp",
+                  "targetScene": 23,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 162 125 365 0 L'histoire",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 182 125 365 0 du chocolat",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 895,
+                "y": 94
+              },
+              {
+                "x": 956,
+                "y": 146
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 18,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 14",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../portu/portu.vnp",
+                  "targetScene": 14,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "515 44 125 365 0 Le fado",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 485,
+                "y": 71
+              },
+              {
+                "x": 566,
+                "y": 130
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 19,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 26",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../france/france.vnp",
+                  "targetScene": 26,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1300 280 125 365 0 Les grands couturiers",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1369,
+                "y": 199
+              },
+              {
+                "x": 1441,
+                "y": 262
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 20,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\holl\\holl.vnp 11",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../holl/holl.vnp",
+                  "targetScene": 11,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1110 260  125 365 0 Les tulipes",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 1128,
+                "y": 203
+              },
+              {
+                "x": 1203,
+                "y": 199
+              },
+              {
+                "x": 1204,
+                "y": 261
+              },
+              {
+                "x": 1135,
+                "y": 258
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 21,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\portu\\portu.vnp 15",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../portu/portu.vnp",
+                  "targetScene": 15,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1450 262 125 365 0 Les grands",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "1450 282 125 365 0 navigateurs",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 1458,
+                "y": 203
+              },
+              {
+                "x": 1559,
+                "y": 263
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 22,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 150 125 365 0 Louis",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 165 125 365 0 Pasteur",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\france\\france.vnp 15",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../france/france.vnp",
+                  "targetScene": 15,
+                  "condition": "jeu = 1"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 481,
+                "y": 137
+              },
+              {
+                "x": 569,
+                "y": 195
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 23,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\italie\\italie.vnp  29",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../italie/italie.vnp",
+                  "targetScene": 29,
+                  "condition": "jeu = 1"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 222 125 365 0 Balade à",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 242 125 365 0 Venise",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 476,
+                "y": 202
+              },
+              {
+                "x": 569,
+                "y": 261
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 24,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "395 362 125 365 0 Ludwig Van Beethoven",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\allem\\allem.vnp 5",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../allem/allem.vnp",
+                  "targetScene": 5,
+                  "condition": "jeu = 1"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 482,
+                "y": 270
+              },
+              {
+                "x": 576,
+                "y": 326
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 25,
+          "commands": [
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "950 162 125 365 0 Stonehenge",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 23,
+              "param": "jeu 1"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "jeu = 1 then runprj ..\\angl\\angleterre.vnp 57",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../angl/angleterre.vnp",
+                  "targetScene": 57,
+                  "condition": "jeu = 1"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 961,
+                "y": 92
+              },
+              {
+                "x": 1053,
+                "y": 148
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
     }
   ],
   "logs": [
@@ -1488,8 +4164,32 @@
     "    ℹ️ Suspicious Command ID 16777216 in Init Script. Stopping to avoid garbage data.",
     "    ℹ️ Config signature missing. Next scene detected directly.",
     "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #4 @ 0x00001E49",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Scene slot/ID: 0",
+    "    Fichier 1 @ 0x00001E56: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x00001E6F: 'euroland\\banque.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (5 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #5 @ 0x0000242A",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Scene slot/ID: 0",
+    "    ℹ️ Slot 2: Length 2164260864 too large. Stopping file parsing.",
+    "    ℹ️ Suspicious Command ID 2164260864 in Init Script. Stopping to avoid garbage data.",
+    "    ℹ️ Config signature missing. Next scene detected directly.",
+    "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #6 @ 0x0000243D",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Scene slot/ID: 0",
+    "    Fichier 1 @ 0x0000244A: 'music.wav' (param=6)",
+    "    Fichier 3 @ 0x00002463: 'euroland\\biblio.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (26 items)",
     "\n================================================================================",
-    "Parsé 3 scènes",
+    "Parsé 6 scènes",
     "================================================================================"
   ]
 }
