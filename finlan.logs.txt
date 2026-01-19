@@ -3,7 +3,11 @@ VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)
 ================================================================================
 ℹ️ INDEX_ID: 1
 ✓ Signature VNFILE @ 0x00000009
-⚠️ Utilise fallback @ 0x00000135
+✓ Table des variables @ 0x0000008A (taille: 280 bytes)
+✓ Fin des variables @ 0x00001142 (280 variables parsées)
+✓ Padding après variables: 8 bytes
+✓ Pas de séparateur (Pattern B)
+✓ Début des scènes @ 0x00001152
 
 ════════════════════════════════════════════════════════════════════════════════
 SCÈNE #1 @ 0x00001159
@@ -14,6 +18,15 @@ SCÈNE #1 @ 0x00001159
     ℹ️ Config signature missing. Next scene detected directly.
     ℹ️ Skipping Hotspots: Next scene detected immediately.
 
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #2 @ 0x00001860
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 1 @ 0x00001869: 'a_fin.wav' (param=2)
+    Fichier 3 @ 0x00001882: 'noel.bmp' (param=16)
+    ℹ️ Suspicious Command ID 4294967278 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
 ================================================================================
-Parsé 1 scènes
+Parsé 2 scènes
 ================================================================================

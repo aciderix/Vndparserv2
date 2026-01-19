@@ -10,25 +10,41 @@
   "scenes": [
     {
       "id": 1,
-      "offset": 4452,
+      "offset": 6705,
       "files": [
         {
-          "slot": 2,
-          "filename": "music.wav",
-          "param": 2,
-          "offset": 4460
+          "slot": 1,
+          "filename": "Le bureau du banquier",
+          "param": 0,
+          "offset": 6705
         },
         {
-          "slot": 4,
-          "filename": "euroland\\face.bmp",
+          "slot": 7,
+          "filename": "euroland\\bureaubanquier.bmp",
           "param": 16,
-          "offset": 4485
+          "offset": 6774
         }
       ],
       "initScript": {
         "flag": 0,
-        "count": 2,
+        "count": 6,
         "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
           {
             "id": 0,
             "param": "NOP"
@@ -55,26 +71,8 @@
           "commands": [
             {
               "id": 1,
-              "subtype": 9,
-              "param": "euroland\\bibliobis.avi 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
-                "parsedParam": {
-                  "type": "video",
-                  "file": "euroland/bibliobis.avi",
-                  "args": [
-                    "1"
-                  ]
-                }
-              }
-            },
-            {
-              "id": 1,
               "subtype": 6,
-              "param": "4",
+              "param": "3",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Son Interface / Curseur",
@@ -85,7 +83,7 @@
             {
               "id": 0,
               "subtype": 39,
-              "param": "18 0 #000000 Comic sans MS",
+              "param": "24 0 #ffffff Comic sans MS",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Config Police",
@@ -94,9 +92,9 @@
                 "parsedParam": {
                   "type": "font",
                   "args": [
-                    "18",
+                    "24",
                     "0",
-                    "#000000",
+                    "#ffffff",
                     "Comic sans MS"
                   ]
                 }
@@ -105,7 +103,7 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "57 60 125 365 0 La bibliothèque",
+              "param": "40 360 125 365 0 SORTIE",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
@@ -130,305 +128,19 @@
                   "condition": "score < 0"
                 }
               }
-            },
-            {
-              "id": 2,
-              "subtype": 22,
-              "param": "euroland 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Set Variable",
-                  "description": "Définit une variable"
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "espagne = 1 then dec_var espagne 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "espagne",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "angleterre = 1 then dec_var angleterre 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "angleterre",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "autriche = 1  then dec_var autriche 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "autriche",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "allemagne = 1  then dec_var allemagne 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "allemagne",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "ecosse = 1  then dec_var ecosse 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "ecosse",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "belgique = 1  then dec_var belgique 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "belgique",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "france = 1  then dec_var france 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "france",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "finlande = 1  then dec_var finlande 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "finlande",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "irlande = 1  then dec_var irlande 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "irlande",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "italie = 1  then dec_var italie 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "italie",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "paysbas = 1  then dec_var paysbas 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "paysbas",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "grece = 1  then dec_var grece 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "grece",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "danemark = 1  then dec_var danemark 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "danemark",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "portugal = 1  then dec_var portugal 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "portugal",
-                  "value": 1
-                }
-              }
-            },
-            {
-              "id": 2,
-              "subtype": 21,
-              "param": "suede = 1  then dec_var suede 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Opération Variable",
-                  "description": "Manipulation de variable (set, inc, dec)"
-                },
-                "parsedParam": {
-                  "type": "variable_op",
-                  "action": "dec_var",
-                  "file": "suede",
-                  "value": 1
-                }
-              }
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 7,
+            "cursorId": 104,
+            "pointCount": 2,
             "points": [
               {
-                "x": 140,
-                "y": 267
+                "x": 0,
+                "y": 355
               },
               {
-                "x": 181,
-                "y": 260
-              },
-              {
-                "x": 189,
-                "y": 166
-              },
-              {
-                "x": 166,
-                "y": 121
-              },
-              {
-                "x": 56,
-                "y": 120
-              },
-              {
-                "x": 35,
-                "y": 161
-              },
-              {
-                "x": 43,
-                "y": 189
+                "x": 639,
+                "y": 400
               }
             ],
             "extraFlag": 0
@@ -438,9 +150,20 @@
           "index": 1,
           "commands": [
             {
+              "id": 1,
+              "subtype": 6,
+              "param": "20",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
               "id": 0,
               "subtype": 39,
-              "param": "18 0 #000000 Comic sans MS",
+              "param": "18 0 #ffffff Comic sans MS",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Config Police",
@@ -451,7 +174,7 @@
                   "args": [
                     "18",
                     "0",
-                    "#000000",
+                    "#ffffff",
                     "Comic sans MS"
                   ]
                 }
@@ -460,99 +183,34 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "387 351 125 365 0 La banque",
+              "param": "40 350 125 365 0 L'agenda du banquier",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
                   "description": "Zone cliquable et texte associé"
                 }
               }
-            },
-            {
-              "id": 1,
-              "subtype": 9,
-              "param": "euroland\\bankbis.avi 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
-                "parsedParam": {
-                  "type": "video",
-                  "file": "euroland/bankbis.avi",
-                  "args": [
-                    "1"
-                  ]
-                }
-              }
-            },
-            {
-              "id": 1,
-              "subtype": 6,
-              "param": "3",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Son Interface / Curseur",
-                  "description": "Son système ou ID Curseur"
-                }
-              }
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 13,
+            "cursorId": 106,
+            "pointCount": 4,
             "points": [
               {
-                "x": 433,
-                "y": 339
+                "x": 360,
+                "y": 210
               },
               {
-                "x": 389,
-                "y": 303
-              },
-              {
-                "x": 416,
-                "y": 262
-              },
-              {
-                "x": 426,
+                "x": 448,
                 "y": 242
               },
               {
-                "x": 460,
-                "y": 217
+                "x": 413,
+                "y": 344
               },
               {
-                "x": 465,
-                "y": 169
-              },
-              {
-                "x": 483,
-                "y": 164
-              },
-              {
-                "x": 501,
-                "y": 191
-              },
-              {
-                "x": 530,
-                "y": 166
-              },
-              {
-                "x": 615,
-                "y": 168
-              },
-              {
-                "x": 637,
-                "y": 150
-              },
-              {
-                "x": 639,
-                "y": 374
-              },
-              {
-                "x": 552,
-                "y": 374
+                "x": 318,
+                "y": 306
               }
             ],
             "extraFlag": 0
@@ -564,7 +222,7 @@
             {
               "id": 0,
               "subtype": 39,
-              "param": "18 0 #000000 Comic sans MS",
+              "param": "18 0 #ffffff Comic sans MS",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Config Police",
@@ -575,7 +233,7 @@
                   "args": [
                     "18",
                     "0",
-                    "#000000",
+                    "#ffffff",
                     "Comic sans MS"
                   ]
                 }
@@ -584,71 +242,26 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "89 375 125 365 0 Ma maison",
+              "param": "40 350 125 365 0 Une tasse de café noir",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
                   "description": "Zone cliquable et texte associé"
                 }
               }
-            },
-            {
-              "id": 1,
-              "subtype": 9,
-              "param": "euroland\\home2.avi 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
-                "parsedParam": {
-                  "type": "video",
-                  "file": "euroland/home2.avi",
-                  "args": [
-                    "1"
-                  ]
-                }
-              }
-            },
-            {
-              "id": 1,
-              "subtype": 6,
-              "param": "5",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Son Interface / Curseur",
-                  "description": "Son système ou ID Curseur"
-                }
-              }
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 6,
+            "cursorId": 100,
+            "pointCount": 2,
             "points": [
               {
-                "x": 9,
-                "y": 385
+                "x": 461,
+                "y": 21
               },
               {
-                "x": 50,
-                "y": 395
-              },
-              {
-                "x": 149,
-                "y": 355
-              },
-              {
-                "x": 145,
-                "y": 277
-              },
-              {
-                "x": 38,
-                "y": 192
-              },
-              {
-                "x": 1,
-                "y": 248
+                "x": 602,
+                "y": 158
               }
             ],
             "extraFlag": 0
@@ -660,7 +273,7 @@
             {
               "id": 0,
               "subtype": 39,
-              "param": "18 0 #000000 Comic sans MS",
+              "param": "18 0 #ffffff Comic sans MS",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Config Police",
@@ -671,7 +284,7 @@
                   "args": [
                     "18",
                     "0",
-                    "#000000",
+                    "#ffffff",
                     "Comic sans MS"
                   ]
                 }
@@ -680,7 +293,7 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "387 18 125 365 0 La maison de prof",
+              "param": "40 350 125 365 0 Une bouteille d'encre noire",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
@@ -690,26 +303,8 @@
             },
             {
               "id": 1,
-              "subtype": 9,
-              "param": "euroland\\profbis.avi 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
-                "parsedParam": {
-                  "type": "video",
-                  "file": "euroland/profbis.avi",
-                  "args": [
-                    "1"
-                  ]
-                }
-              }
-            },
-            {
-              "id": 1,
               "subtype": 6,
-              "param": "6",
+              "param": "22",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Son Interface / Curseur",
@@ -719,56 +314,16 @@
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 12,
+            "cursorId": 106,
+            "pointCount": 2,
             "points": [
               {
-                "x": 466,
-                "y": 149
+                "x": 80,
+                "y": 20
               },
               {
-                "x": 444,
-                "y": 101
-              },
-              {
-                "x": 462,
-                "y": 68
-              },
-              {
-                "x": 464,
-                "y": 24
-              },
-              {
-                "x": 465,
-                "y": 1
-              },
-              {
-                "x": 495,
-                "y": 7
-              },
-              {
-                "x": 504,
-                "y": 40
-              },
-              {
-                "x": 543,
-                "y": 60
-              },
-              {
-                "x": 572,
-                "y": 92
-              },
-              {
-                "x": 578,
-                "y": 126
-              },
-              {
-                "x": 568,
-                "y": 166
-              },
-              {
-                "x": 496,
-                "y": 156
+                "x": 173,
+                "y": 130
               }
             ],
             "extraFlag": 0
@@ -778,9 +333,20 @@
           "index": 4,
           "commands": [
             {
+              "id": 1,
+              "subtype": 6,
+              "param": "23",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
               "id": 0,
               "subtype": 39,
-              "param": "18 0 #000000 Comic sans MS",
+              "param": "18 0 #ffffff Comic sans MS",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Config Police",
@@ -791,7 +357,7 @@
                   "args": [
                     "18",
                     "0",
-                    "#000000",
+                    "#ffffff",
                     "Comic sans MS"
                   ]
                 }
@@ -800,91 +366,38 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "249 297 125 365 0 Le musée du village",
+              "param": "40 350 125 365 00 Du courrier",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
                   "description": "Zone cliquable et texte associé"
                 }
               }
-            },
-            {
-              "id": 1,
-              "subtype": 9,
-              "param": "euroland\\musee.avi 1",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
-                "parsedParam": {
-                  "type": "video",
-                  "file": "euroland/musee.avi",
-                  "args": [
-                    "1"
-                  ]
-                }
-              }
-            },
-            {
-              "id": 1,
-              "subtype": 6,
-              "param": "7",
-              "interpreted": {
-                "opcodeInfo": {
-                  "name": "Son Interface / Curseur",
-                  "description": "Son système ou ID Curseur"
-                }
-              }
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 11,
+            "cursorId": 106,
+            "pointCount": 5,
             "points": [
               {
-                "x": 287,
-                "y": 267
+                "x": 234,
+                "y": 156
               },
               {
-                "x": 270,
-                "y": 238
+                "x": 227,
+                "y": 65
               },
               {
-                "x": 273,
-                "y": 198
+                "x": 390,
+                "y": 50
               },
               {
-                "x": 270,
-                "y": 181
+                "x": 434,
+                "y": 133
               },
               {
-                "x": 315,
-                "y": 149
-              },
-              {
-                "x": 347,
-                "y": 136
-              },
-              {
-                "x": 388,
-                "y": 162
-              },
-              {
-                "x": 417,
-                "y": 190
-              },
-              {
-                "x": 405,
-                "y": 203
-              },
-              {
-                "x": 411,
-                "y": 245
-              },
-              {
-                "x": 383,
-                "y": 280
+                "x": 297,
+                "y": 195
               }
             ],
             "extraFlag": 0
@@ -894,6 +407,264 @@
           "index": 5,
           "commands": [
             {
+              "id": 1,
+              "subtype": 6,
+              "param": "21",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "40 350 125 365 0 Dossier euro",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 106,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 131,
+                "y": 165
+              },
+              {
+                "x": 240,
+                "y": 308
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "offset": 7742,
+      "files": [
+        {
+          "slot": 4,
+          "filename": "music.wav",
+          "param": 6,
+          "offset": 7766
+        },
+        {
+          "slot": 6,
+          "filename": "euroland\\banque.bmp",
+          "param": 16,
+          "offset": 7791
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 4,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "1",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "22 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "22",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "90 350 600 365 0 SORTIE",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Script Logique",
+                  "description": "Logique conditionnelle (if/then/else)"
+                },
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../couleurs1/couleurs1.vnp",
+                  "targetScene": 54,
+                  "condition": "score < 0"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 104,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 370
+              },
+              {
+                "x": 639,
+                "y": 400
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
+            },
+            {
+              "id": 1,
+              "subtype": 9,
+              "param": "euroland\\banq2.avi 1 168 122 344 374",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Media Cmd (Vidéo)",
+                  "description": "Lecture de fichier AVI"
+                },
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/banq2.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 16,
+              "param": "500"
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq41.avi 1 168 122 344 374",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "video",
+                  "file": "euroland/banq41.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 11,
+              "param": "music.wav 2",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "music.wav",
+                  "args": [
+                    "2"
+                  ]
+                }
+              }
+            },
+            {
               "id": 0,
               "subtype": 39,
               "param": "18 0 #000000 Comic sans MS",
@@ -916,26 +687,164 @@
             {
               "id": 0,
               "subtype": 38,
-              "param": "348 357 125 365 0 La fontaine à couleurs",
+              "param": "160 350 125 365 0 Le banquier d'Euroland",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Zone Texte / Bulle",
                   "description": "Zone cliquable et texte associé"
                 }
               }
+            }
+          ],
+          "geometry": {
+            "cursorId": 108,
+            "pointCount": 10,
+            "points": [
+              {
+                "x": 184,
+                "y": 340
+              },
+              {
+                "x": 194,
+                "y": 215
+              },
+              {
+                "x": 206,
+                "y": 181
+              },
+              {
+                "x": 177,
+                "y": 158
+              },
+              {
+                "x": 213,
+                "y": 123
+              },
+              {
+                "x": 312,
+                "y": 132
+              },
+              {
+                "x": 332,
+                "y": 171
+              },
+              {
+                "x": 308,
+                "y": 194
+              },
+              {
+                "x": 321,
+                "y": 291
+              },
+              {
+                "x": 317,
+                "y": 340
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 36,
+              "param": ""
             },
             {
               "id": 1,
-              "subtype": 9,
-              "param": "euroland\\fontaine.avi 1",
+              "subtype": 21,
+              "param": "milleeuro = 0 then playavi euroland\\banq3.avi 1 168 122 344 374",
               "interpreted": {
-                "opcodeInfo": {
-                  "name": "Media Cmd (Vidéo)",
-                  "description": "Lecture de fichier AVI"
-                },
                 "parsedParam": {
                   "type": "video",
-                  "file": "euroland/fontaine.avi",
+                  "file": "euroland/banq3.avi",
+                  "args": [
+                    "1",
+                    "168",
+                    "122",
+                    "344",
+                    "374"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "milleeuro = 0 then rundll roue.dll"
+            },
+            {
+              "id": 2,
+              "subtype": 21,
+              "param": "milleeuro >= 1 then addbmp coffre euroland\\rollover\\coffre.bmp 0 0 203 else delbmp coffre",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Opération Variable",
+                  "description": "Manipulation de variable (set, inc, dec)"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #ffffff Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#ffffff",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "5 365 125 400 0 Un coffre fort",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 2,
+            "points": [
+              {
+                "x": 0,
+                "y": 205
+              },
+              {
+                "x": 90,
+                "y": 360
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playwav bruit\\boing.wav 1",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "audio",
+                  "file": "bruit/boing.wav",
                   "args": [
                     "1"
                   ]
@@ -944,56 +853,134 @@
             },
             {
               "id": 1,
-              "subtype": 36,
-              "param": ""
+              "subtype": 21,
+              "param": "bonus3 = 0 then set_var bonus3 1",
+              "interpreted": {
+                "parsedParam": {
+                  "type": "variable_op",
+                  "action": "set_var",
+                  "file": "bonus3",
+                  "value": 1
+                }
+              }
             },
             {
               "id": 1,
+              "subtype": 21,
+              "param": "bonus3 = 1 then scene 35"
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 0 then playtext 310 75 125 365 0 Question Bonus"
+            },
+            {
+              "id": 0,
+              "subtype": 21,
+              "param": "bonus3 = 2 then playtext 310 75 125 365 0 tu as déjà répondu"
+            }
+          ],
+          "geometry": {
+            "cursorId": 107,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 451,
+                "y": 17
+              },
+              {
+                "x": 552,
+                "y": 10
+              },
+              {
+                "x": 556,
+                "y": 133
+              },
+              {
+                "x": 450,
+                "y": 138
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
               "subtype": 6,
-              "param": "39",
+              "param": "2",
               "interpreted": {
                 "opcodeInfo": {
                   "name": "Son Interface / Curseur",
                   "description": "Son système ou ID Curseur"
                 }
               }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "380 330 639 365 0 Le bureau du banquier",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
             }
           ],
           "geometry": {
-            "cursorId": 105,
-            "pointCount": 8,
+            "cursorId": 106,
+            "pointCount": 2,
             "points": [
               {
-                "x": 277,
-                "y": 316
+                "x": 330,
+                "y": 220
               },
               {
-                "x": 232,
-                "y": 316
-              },
-              {
-                "x": 213,
-                "y": 304
-              },
-              {
-                "x": 228,
-                "y": 289
-              },
-              {
-                "x": 229,
-                "y": 0
-              },
-              {
-                "x": 264,
-                "y": 0
-              },
-              {
-                "x": 264,
-                "y": 289
-              },
-              {
-                "x": 280,
-                "y": 303
+                "x": 610,
+                "y": 270
               }
             ],
             "extraFlag": 0
@@ -1008,16 +995,27 @@
     "================================================================================",
     "ℹ️ INDEX_ID: 1",
     "✓ Signature VNFILE @ 0x00000009",
-    "✓ Début estimé des scènes @ 0x00001163",
+    "✓ Table des variables @ 0x0000008A (taille: 280 bytes)",
+    "✓ Fin des variables @ 0x00001154 (281 variables parsées)",
+    "✓ Séparateur 01 00 00 00 trouvé @ 0x0000115C",
+    "✓ Padding après séparateur: 8 bytes",
+    "✓ Début des scènes @ 0x00001168",
     "\n════════════════════════════════════════════════════════════════════════════════",
-    "SCÈNE #1 @ 0x00001163",
+    "SCÈNE #1 @ 0x00001A30",
     "════════════════════════════════════════════════════════════════════════════════",
-    "    Fichier 1 @ 0x0000116C: 'music.wav' (param=2)",
-    "    Fichier 3 @ 0x00001185: 'euroland\\face.bmp' (param=16)",
-    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "    Titre @ 0x00001A31: 'Le bureau du banquier' (param=0)",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1A56. Backtracking.",
+    "    Fichier 6 @ 0x00001A76: 'euroland\\bureaubanquier.bmp' (param=16)",
     "\n  [HOTSPOTS] (6 items)",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #2 @ 0x00001E3D",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1E46. Backtracking.",
+    "    Fichier 3 @ 0x00001E56: 'music.wav' (param=6)",
+    "    Fichier 5 @ 0x00001E6F: 'euroland\\banque.bmp' (param=16)",
+    "\n  [HOTSPOTS] (5 items)",
     "\n================================================================================",
-    "Parsé 1 scènes",
+    "Parsé 2 scènes",
     "================================================================================"
   ]
 }

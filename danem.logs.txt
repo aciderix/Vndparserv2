@@ -3,20 +3,33 @@ VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)
 ================================================================================
 ℹ️ INDEX_ID: 1
 ✓ Signature VNFILE @ 0x00000009
-⚠️ Utilise fallback @ 0x00000135
+✓ Table des variables @ 0x0000008A (taille: 281 bytes)
+✓ Fin des variables @ 0x00001152 (281 variables parsées)
+✓ Padding après variables: 8 bytes
+✓ Séparateur 01 00 00 00 trouvé @ 0x00001162
+✓ Padding après séparateur: 12 bytes
+✓ Début des scènes @ 0x00001172
 
 ════════════════════════════════════════════════════════════════════════════════
-SCÈNE #1 @ 0x00001128
+SCÈNE #1 @ 0x0000139B
 ════════════════════════════════════════════════════════════════════════════════
-    Titre @ 0x00001129: 'PUNK' (param=0)
-    Fichier 1 @ 0x00001135: 'LAPIN' (param=0)
-    Fichier 2 @ 0x00001142: 'JEUGAGNE' (param=0)
-    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x1162. Backtracking.
-    Fichier 7 @ 0x00001172: 'a_dan.wav' (param=2)
-    ℹ️ Command string length 1701867363 overshoots script area. Stopping.
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x13AC. Backtracking.
+    Fichier 4 @ 0x000013BC: 'a_dan.wav' (param=6)
+    Fichier 6 @ 0x000013D5: 'forge.bmp' (param=16)
+    ℹ️ Suspicious Command ID 4294967284 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #2 @ 0x00002A9E
+════════════════════════════════════════════════════════════════════════════════
+    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x2AAF. Backtracking.
+    Fichier 4 @ 0x00002ABF: '..\..\portu\digit\port.wav' (param=2)
+    Fichier 6 @ 0x00002AE9: 'siren.bmp' (param=16)
+    ℹ️ Suspicious Command ID 4294967284 in Init Script. Stopping to avoid garbage data.
     ℹ️ Config signature missing. Next scene detected directly.
     ℹ️ Skipping Hotspots: Next scene detected immediately.
 
 ================================================================================
-Parsé 1 scènes
+Parsé 2 scènes
 ================================================================================

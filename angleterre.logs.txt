@@ -1,0 +1,23 @@
+================================================================================
+VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)
+================================================================================
+ℹ️ INDEX_ID: 1
+✓ Signature VNFILE @ 0x00000009
+✓ Table des variables @ 0x0000008A (taille: 284 bytes)
+✓ Fin des variables @ 0x00001187 (284 variables parsées)
+✓ Padding après variables: 24 bytes
+✓ Pas de séparateur (Pattern B)
+✓ Début des scènes @ 0x000011A7
+
+════════════════════════════════════════════════════════════════════════════════
+SCÈNE #1 @ 0x000011B7
+════════════════════════════════════════════════════════════════════════════════
+    Fichier 1 @ 0x000011C0: 'vitrine.bmp' (param=16)
+    ℹ️ Slot 8: Filename contains binary control characters. Assuming end of files.
+    ℹ️ Suspicious Command ID 905969664 in Init Script. Stopping to avoid garbage data.
+    ℹ️ Config signature missing. Next scene detected directly.
+    ℹ️ Skipping Hotspots: Next scene detected immediately.
+
+================================================================================
+Parsé 1 scènes
+================================================================================

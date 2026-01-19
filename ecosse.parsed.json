@@ -1,0 +1,506 @@
+{
+  "metadata": {
+    "resolution": {
+      "width": 640,
+      "height": 480,
+      "colorDepth": 16
+    },
+    "indexId": 1
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "offset": 4442,
+      "files": [
+        {
+          "slot": 2,
+          "filename": "a_eco.wav",
+          "param": 0,
+          "offset": 4450
+        },
+        {
+          "slot": 4,
+          "filename": "maison.bmp",
+          "param": 16,
+          "offset": 4475
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 2,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 4294967259,
+        "ints": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "hotspots": [
+        {
+          "index": 0,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "2",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "393 343 125 365 0 La maison de Mac Adam",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "subtype": 21,
+              "param": "score < 0 then runprj ..\\couleurs1\\couleurs1.vnp 54",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Script Logique",
+                  "description": "Logique conditionnelle (if/then/else)"
+                },
+                "parsedParam": {
+                  "type": "runprj",
+                  "action": "Load Project",
+                  "targetFile": "../couleurs1/couleurs1.vnp",
+                  "targetScene": 54,
+                  "condition": "score < 0"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 8,
+            "points": [
+              {
+                "x": 4,
+                "y": 206
+              },
+              {
+                "x": 73,
+                "y": 78
+              },
+              {
+                "x": 260,
+                "y": 126
+              },
+              {
+                "x": 356,
+                "y": 195
+              },
+              {
+                "x": 382,
+                "y": 323
+              },
+              {
+                "x": 201,
+                "y": 320
+              },
+              {
+                "x": 191,
+                "y": 252
+              },
+              {
+                "x": 9,
+                "y": 257
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 1,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "4",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "459 293 125 365 0 La maison de Mac hattapulte",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 371,
+                "y": 185
+              },
+              {
+                "x": 537,
+                "y": 198
+              },
+              {
+                "x": 537,
+                "y": 244
+              },
+              {
+                "x": 396,
+                "y": 309
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 2,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "5",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "593 359 125 365 0 La maison de Mac hasquette",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 7,
+            "points": [
+              {
+                "x": 894,
+                "y": 167
+              },
+              {
+                "x": 893,
+                "y": 355
+              },
+              {
+                "x": 1070,
+                "y": 371
+              },
+              {
+                "x": 1073,
+                "y": 283
+              },
+              {
+                "x": 1100,
+                "y": 271
+              },
+              {
+                "x": 1208,
+                "y": 287
+              },
+              {
+                "x": 1211,
+                "y": 168
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 3,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "6",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 39,
+              "param": "18 0 #000000 Comic sans MS",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Config Police",
+                  "description": "Définit la font et la couleur"
+                },
+                "parsedParam": {
+                  "type": "font",
+                  "args": [
+                    "18",
+                    "0",
+                    "#000000",
+                    "Comic sans MS"
+                  ]
+                }
+              }
+            },
+            {
+              "id": 0,
+              "subtype": 38,
+              "param": "499 293 125 365 0 La maison de Mac harony",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Zone Texte / Bulle",
+                  "description": "Zone cliquable et texte associé"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 105,
+            "pointCount": 4,
+            "points": [
+              {
+                "x": 702,
+                "y": 184
+              },
+              {
+                "x": 873,
+                "y": 162
+              },
+              {
+                "x": 858,
+                "y": 317
+              },
+              {
+                "x": 700,
+                "y": 252
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 4,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "17",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 101,
+            "pointCount": 8,
+            "points": [
+              {
+                "x": 831,
+                "y": 359
+              },
+              {
+                "x": 1097,
+                "y": 359
+              },
+              {
+                "x": 1090,
+                "y": 285
+              },
+              {
+                "x": 1162,
+                "y": 285
+              },
+              {
+                "x": 1240,
+                "y": 302
+              },
+              {
+                "x": 1277,
+                "y": 302
+              },
+              {
+                "x": 1279,
+                "y": 392
+              },
+              {
+                "x": 828,
+                "y": 393
+              }
+            ],
+            "extraFlag": 0
+          }
+        },
+        {
+          "index": 5,
+          "commands": [
+            {
+              "id": 1,
+              "subtype": 6,
+              "param": "18",
+              "interpreted": {
+                "opcodeInfo": {
+                  "name": "Son Interface / Curseur",
+                  "description": "Son système ou ID Curseur"
+                }
+              }
+            }
+          ],
+          "geometry": {
+            "cursorId": 103,
+            "pointCount": 6,
+            "points": [
+              {
+                "x": 2,
+                "y": 270
+              },
+              {
+                "x": 183,
+                "y": 262
+              },
+              {
+                "x": 188,
+                "y": 328
+              },
+              {
+                "x": 383,
+                "y": 331
+              },
+              {
+                "x": 386,
+                "y": 397
+              },
+              {
+                "x": 2,
+                "y": 393
+              }
+            ],
+            "extraFlag": 0
+          }
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "================================================================================",
+    "VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)",
+    "================================================================================",
+    "ℹ️ INDEX_ID: 1",
+    "✓ Signature VNFILE @ 0x00000009",
+    "✓ Table des variables @ 0x0000008A (taille: 280 bytes)",
+    "✓ Fin des variables @ 0x00001142 (280 variables parsées)",
+    "✓ Padding après variables: 8 bytes",
+    "✓ Pas de séparateur (Pattern B)",
+    "✓ Début des scènes @ 0x00001152",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #1 @ 0x00001159",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    Fichier 1 @ 0x00001162: 'a_eco.wav' (param=0)",
+    "    Fichier 3 @ 0x0000117B: 'maison.bmp' (param=16)",
+    "    ℹ️ Slot 8: Config signature detected ahead. Stopping file parsing.",
+    "\n  [HOTSPOTS] (6 items)",
+    "\n================================================================================",
+    "Parsé 1 scènes",
+    "================================================================================"
+  ]
+}

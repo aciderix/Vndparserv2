@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "resolution": {
+      "width": 640,
+      "height": 480,
+      "colorDepth": 16
+    },
+    "indexId": 1
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "offset": 9803,
+      "files": [
+        {
+          "slot": 5,
+          "filename": "cafe2.wav",
+          "param": 2,
+          "offset": 9835
+        },
+        {
+          "slot": 7,
+          "filename": "resttou.bmp",
+          "param": 16,
+          "offset": 9860
+        }
+      ],
+      "initScript": {
+        "flag": 0,
+        "count": 6,
+        "commands": [
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          },
+          {
+            "id": 0,
+            "param": "NOP"
+          }
+        ]
+      },
+      "config": {
+        "flag": 0,
+        "ints": []
+      },
+      "hotspots": []
+    }
+  ],
+  "logs": [
+    "================================================================================",
+    "VND SEQUENTIAL PARSER - V5.5 (Hotspot Align Fix)",
+    "================================================================================",
+    "ℹ️ INDEX_ID: 1",
+    "✓ Signature VNFILE @ 0x00000009",
+    "✓ Table des variables @ 0x0000008A (taille: 284 bytes)",
+    "✓ Fin des variables @ 0x00001187 (284 variables parsées)",
+    "✓ Padding après variables: 8 bytes",
+    "✓ Séparateur 01 00 00 00 trouvé @ 0x00001197",
+    "✓ Padding après séparateur: 12 bytes",
+    "✓ Début des scènes @ 0x000011A7",
+    "\n════════════════════════════════════════════════════════════════════════════════",
+    "SCÈNE #1 @ 0x0000264A",
+    "════════════════════════════════════════════════════════════════════════════════",
+    "    ℹ️ Quirk: Filename length 1 with value 0x00 at 0x265B. Backtracking.",
+    "    Fichier 4 @ 0x0000266B: 'cafe2.wav' (param=2)",
+    "    Fichier 6 @ 0x00002684: 'resttou.bmp' (param=16)",
+    "    ℹ️ Suspicious Command ID 4294967268 in Init Script. Stopping to avoid garbage data.",
+    "    ℹ️ Config signature missing. Next scene detected directly.",
+    "    ℹ️ Skipping Hotspots: Next scene detected immediately.",
+    "\n================================================================================",
+    "Parsé 1 scènes",
+    "================================================================================"
+  ]
+}
